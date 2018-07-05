@@ -1,0 +1,5 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="instahiit24.png" />
+    <bitmap id="hr_red_24" filename="hr_red_24.png" />
+    <bitmap id="stopwatch_24" filename="stopwatch_24.png"> <palette> <color>FFFFFF</color> </palette> </bitmap> 
+</drawables>

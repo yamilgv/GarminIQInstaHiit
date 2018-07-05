@@ -1,0 +1,5 @@
+Many thanks to the following open-source Connect IQ projects for great code examples which helped me in the development of this app:
+
+https://github.com/werkkrew/ciq-orange-theory
+https://github.com/darrencroton/SnapshotWatch
+https://github.com/HanSolo/digital5
