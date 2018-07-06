@@ -32,7 +32,8 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
         // Treat the Menu button like the Secondary Timer Toggle button during workout 
         if(mController.WorkoutUIState == mController.UISTATE_RUNNING) {
         	mController.vibrate(0);
-        	mController.restartSecondaryTimer();
+        	//mController.restartSecondaryTimer();
+        	mController.toggleSecondaryTimer();
         	return true;
         }
         

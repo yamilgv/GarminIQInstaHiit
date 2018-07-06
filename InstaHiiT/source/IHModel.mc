@@ -23,7 +23,7 @@ class IHModel
     //hidden var mSplatsField = null;
     hidden var mStability;
     hidden var mStabilityTimer;
-    //hidden var mStabilityOn;
+    hidden var mStabilityOn;
     hidden var mGPSOn = false;
 
     // Primary stats used during intervals
@@ -109,8 +109,8 @@ class IHModel
         mZones = new [4];
         // HR Time in Each Zone
         mZoneTimes = new [5];
-        // Stability is inactive
-        //mStabilityOn = false;
+        mStability = true; //Make HR Stability Option ON by Default Default
+        mStabilityOn = false; // HR Stability internal logic variable
         mGPSOn = false;
         mStabilityTimer = 0;
         mCalories = 0;
@@ -281,15 +281,15 @@ class IHModel
                 mHeartRate = sensor_info.heartRate;
                 mHeartRate = mHeartRate == null? 0: mHeartRate;
                 mStabilityTimer = 0;
-                //mStabilityOn = false;
+                mStabilityOn = false;
             } else {
                 // if HR stability is off or the timer has expired
-                //if ( mStability == false || mStabilityTimer > 9 ) {
+                if ( mStability == false || mStabilityTimer > 9 ) {
                     //Log.debug("No HR Detected: Stability Off, Stability Timer Expired");
                     mHeartRate = 0;
-                //} else {
-                   // mStabilityOn = true;
-                //}
+                } else {
+                   mStabilityOn = true;
+                }
             }
         }
     }
@@ -404,10 +404,10 @@ class IHModel
         mSecondarySeconds = (mSecondarySeconds == -2) ? (-2):(mSecondarySeconds + 1);
 
         // Increment Stability timer if needed
-        //if ( mStabilityOn == true ) {
-           // mStabilityTimer++;
+        if ( mStabilityOn == true ) {
+        	mStabilityTimer++;
             //Log.debug("Stability Mode On, Timer: " + mStabilityTimer);
-        //}
+        }
     }
 
     // Define the HR Zones from Garmin Profile

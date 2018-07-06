@@ -285,7 +285,7 @@ class IHController
     //Toggles Start/Reset Secondary Timer
     function toggleSecondaryTimer(){
     	if(isSecondaryTimerStarted == false) {
-        	mModel.startSecondaryTimer();
+        	mModel.startSecondaryTimer(true);
         	isSecondaryTimerStarted = true;
         }
         else {
