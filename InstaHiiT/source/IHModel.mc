@@ -28,8 +28,6 @@ class IHModel
 
     // Primary stats used during intervals
     hidden var mHeartRate;
-    hidden var mHeartRatePct;
-    //hidden var mHeartRateZone;
     hidden var mMaxHR;
     hidden var mZones;
     hidden var mZoneTimes;
@@ -91,10 +89,6 @@ class IHModel
     function initialize() {
         // Sensor Heart Rate
         mHeartRate = 0;
-        // Heart Rate as a Percentage
-        mHeartRatePct = 0;
-        // Current Heart Rate Zone
-        //mHeartRateZone = 0;
         // Max Heart Rate
         mMaxHR = 0;
         // Splat Points
@@ -109,7 +103,7 @@ class IHModel
         mZones = new [4];
         // HR Time in Each Zone
         mZoneTimes = new [5];
-        mStability = true; //Make HR Stability Option ON by Default Default
+        mStability = true; //Make HR Stability Option On by Default Default
         mStabilityOn = false; // HR Stability internal logic variable
         mGPSOn = false;
         mStabilityTimer = 0;
@@ -216,17 +210,6 @@ class IHModel
     function getAvgHRbpm() {
         return mAverageHR;
     }
-
-    // Return the current heart rate in bpm
-    function getHRpct() {
-        return mHeartRatePct;
-    }
-
-    // Return the current heart rate zone number
-    /*
-    function getHRzone() {
-        return mHeartRateZone;
-    }*/
 
     // Return the total elapsed recording time
     function getTimeElapsed() {
@@ -372,7 +355,6 @@ class IHModel
             tz5++; //mHeartRateZone = 5;
         }
 
-        mHeartRatePct = Math.round(( mHeartRate.toDouble() / mMaxHR.toDouble() ) * 100).toNumber();
         mZoneTimes = [ tz1, tz2, tz3, tz4, tz5 ];
 
 		 var activity = Activity.getActivityInfo();

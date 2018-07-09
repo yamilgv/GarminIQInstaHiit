@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="10" pc="268435456" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="12" pc="268435460" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="14" pc="268435478" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="18" pc="268435510" symbol="onBack"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="21" pc="268435514" symbol="onBack"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="22" pc="268435546" symbol="onBack"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="24" pc="268435567" symbol="onBack"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="28" pc="268435571" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="30" pc="268435575" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="33" pc="268435598" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="34" pc="268435630" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="36" pc="268435653" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="37" pc="268435671" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="41" pc="268435677" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="43" pc="268435744" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="44" pc="268435811" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="46" pc="268435817" symbol="onMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="50" pc="268435821" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="55" pc="268435825" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="57" pc="268435852" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="58" pc="268435884" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="59" pc="268435902" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="62" pc="268435908" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="63" pc="268435940" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="65" pc="268435961" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="67" pc="268435979" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="75" pc="268435985" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="76" pc="268436042" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="78" pc="268436074" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="83" pc="268436130" symbol="onKey"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="87" pc="268436134" symbol="onTap"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="88" pc="268436138" symbol="onTap"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="94" pc="268436169" symbol="onHold"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="95" pc="268436173" symbol="onHold"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="100" pc="268436204" symbol="onSwipe"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="103" pc="268436208" symbol="onSwipe"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="104" pc="268436265" symbol="onSwipe"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="106" pc="268436297" symbol="onSwipe"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutDelegate.mc" lineNum="107" pc="268436347" symbol="onSwipe"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="58" pc="268436370" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="59" pc="268436374" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="61" pc="268436392" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="63" pc="268436426" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="64" pc="268436455" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="67" pc="268436484" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="70" pc="268436506" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="71" pc="268436541" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="72" pc="268436554" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="73" pc="268436567" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="74" pc="268436580" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="78" pc="268436594" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="80" pc="268436598" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="86" pc="268436619" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="87" pc="268436638" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="88" pc="268436657" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="89" pc="268436679" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="93" pc="268436701" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="94" pc="268436741" symbol="onLayout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="101" pc="268436770" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="103" pc="268436774" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="105" pc="268436795" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="109" pc="268436836" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="111" pc="268436868" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="117" pc="268436889" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="118" pc="268436914" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="119" pc="268436939" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="120" pc="268436964" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="124" pc="268436989" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="125" pc="268437003" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="126" pc="268437137" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="129" pc="268437274" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="130" pc="268437408" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="134" pc="268437542" symbol="onShow"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="141" pc="268437559" symbol="onHide"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="142" pc="268437563" symbol="onHide"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="146" pc="268437582" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="150" pc="268437586" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="154" pc="268437605" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="155" pc="268437663" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="156" pc="268437679" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="156" pc="268437693" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="157" pc="268437712" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="158" pc="268437728" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="162" pc="268437732" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="165" pc="268437799" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="166" pc="268437837" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="169" pc="268437872" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="170" pc="268437910" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="173" pc="268437945" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="176" pc="268437961" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="177" pc="268438001" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="178" pc="268438056" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="179" pc="268438111" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="180" pc="268438166" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="181" pc="268438224" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="181" pc="268438247" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="184" pc="268438305" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="185" pc="268438345" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="186" pc="268438412" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="187" pc="268438479" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="190" pc="268438537" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="191" pc="268438556" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="192" pc="268438584" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="193" pc="268438619" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="194" pc="268438673" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="195" pc="268438728" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="196" pc="268438768" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="199" pc="268438835" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="199" pc="268438866" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="204" pc="268438888" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="207" pc="268438920" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="207" pc="268438934" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="210" pc="268438953" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="211" pc="268438993" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="214" pc="268439057" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="215" pc="268439076" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="216" pc="268439097" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="217" pc="268439134" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="218" pc="268439189" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="219" pc="268439256" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="220" pc="268439308" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="221" pc="268439348" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="224" pc="268439443" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="225" pc="268439454" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="225" pc="268439468" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="226" pc="268439481" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="226" pc="268439495" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="231" pc="268439511" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="231" pc="268439574" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="233" pc="268439591" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="236" pc="268439607" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="236" pc="268439627" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="238" pc="268439646" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="242" pc="268439650" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="245" pc="268439682" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="246" pc="268439722" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="247" pc="268439777" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="250" pc="268439844" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="251" pc="268439884" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="254" pc="268439942" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="255" pc="268439982" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="256" pc="268440040" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="258" pc="268440098" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="258" pc="268440117" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="260" pc="268440131" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="262" pc="268440149" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="266" pc="268440153" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="268" pc="268440220" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="270" pc="268440239" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="271" pc="268440285" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="273" pc="268440313" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="273" pc="268440383" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="277" pc="268440459" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="278" pc="268440497" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="281" pc="268440535" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="282" pc="268440575" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="283" pc="268440639" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="284" pc="268440786" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="287" pc="268440859" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="287" pc="268440870" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="290" pc="268440942" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="291" pc="268440996" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="293" pc="268441100" symbol="onUpdate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="300" pc="268441105" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="303" pc="268441109" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="304" pc="268441166" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="305" pc="268441191" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="309" pc="268441223" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="312" pc="268441263" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="315" pc="268441339" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="316" pc="268441346" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="319" pc="268441362" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="320" pc="268441388" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="323" pc="268441426" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="324" pc="268441496" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="325" pc="268441548" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="326" pc="268441613" symbol="drawSlowUpdatingFields"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="330" pc="268441747" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="333" pc="268441751" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="334" pc="268441789" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="337" pc="268441833" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="338" pc="268441963" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="339" pc="268441982" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="342" pc="268442112" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="343" pc="268442150" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="344" pc="268442205" symbol="drawTimers"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="348" pc="268442261" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="351" pc="268442265" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="351" pc="268442303" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="354" pc="268442338" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="354" pc="268442378" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="355" pc="268442410" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="355" pc="268442450" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="356" pc="268442482" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="356" pc="268442522" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="357" pc="268442554" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="357" pc="268442594" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="358" pc="268442626" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="358" pc="268442666" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="361" pc="268442698" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="362" pc="268442751" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="363" pc="268442791" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="364" pc="268442849" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="365" pc="268442907" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="366" pc="268442968" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="367" pc="268443026" symbol="drawZonesLegend"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="371" pc="268443085" symbol="onTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="372" pc="268443089" symbol="onTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="373" pc="268443115" symbol="onTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="376" pc="268443132" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="378" pc="268443136" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="380" pc="268443170" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="381" pc="268443201" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="382" pc="268443227" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="383" pc="268443241" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="385" pc="268443267" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="388" pc="268443293" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="389" pc="268443303" symbol="zoneChangeEvents"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="392" pc="268443314" symbol="getTimeString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="394" pc="268443318" symbol="getTimeString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="395" pc="268443335" symbol="getTimeString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="396" pc="268443345" symbol="getTimeString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="397" pc="268443417" symbol="getTimeString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="398" pc="268443499" symbol="getTimeString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="402" pc="268443503" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="405" pc="268443507" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="406" pc="268443545" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="408" pc="268443580" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="408" pc="268443598" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="414" pc="268443602" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="415" pc="268443612" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="415" pc="268443629" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="416" pc="268443645" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="416" pc="268443662" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="417" pc="268443678" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="418" pc="268443730" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="419" pc="268443766" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="425" pc="268443819" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="425" pc="268443826" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="428" pc="268443830" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="429" pc="268443841" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="430" pc="268443876" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="431" pc="268443880" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="432" pc="268443893" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="433" pc="268443909" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="434" pc="268443922" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="435" pc="268443945" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="435" pc="268443965" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="436" pc="268443984" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="436" pc="268444004" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="438" pc="268444026" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="441" pc="268444033" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="445" pc="268444049" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="446" pc="268444094" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="449" pc="268444098" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="452" pc="268444111" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="453" pc="268444121" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="457" pc="268444131" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="458" pc="268444131" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="459" pc="268444138" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="460" pc="268444145" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="461" pc="268444167" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="462" pc="268444167" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="464" pc="268444167" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="465" pc="268444174" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="466" pc="268444181" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="467" pc="268444188" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="468" pc="268444195" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="470" pc="268444199" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="471" pc="268444206" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="472" pc="268444213" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="485" pc="268444220" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="486" pc="268444230" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="487" pc="268444268" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="490" pc="268444436" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="492" pc="268444482" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="492" pc="268444505" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="493" pc="268444527" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="494" pc="268444563" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="496" pc="268444731" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="498" pc="268444752" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="499" pc="268444759" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="501" pc="268444766" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="504" pc="268444772" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="506" pc="268444793" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="507" pc="268444797" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="511" pc="268444804" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="513" pc="268444821" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="514" pc="268444834" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="514" pc="268444841" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="517" pc="268444848" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="518" pc="268444858" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="520" pc="268444865" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="522" pc="268444876" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="523" pc="268444880" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="527" pc="268444887" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="528" pc="268444895" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="529" pc="268444902" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="530" pc="268444910" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="535" pc="268444920" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="536" pc="268444942" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="537" pc="268444961" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="543" pc="268444971" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="543" pc="268444979" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="544" pc="268444989" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="549" pc="268445011" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="551" pc="268445033" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="555" pc="268445055" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="556" pc="268445062" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="557" pc="268445079" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="558" pc="268445096" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="560" pc="268445104" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="561" pc="268445147" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="562" pc="268445155" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="564" pc="268445207" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="567" pc="268445254" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="568" pc="268445264" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="571" pc="268445271" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="572" pc="268445275" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="587" pc="268445301" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="588" pc="268445301" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="590" pc="268445308" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="591" pc="268445344" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="593" pc="268445399" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="593" pc="268445422" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="594" pc="268445444" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="595" pc="268445482" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="596" pc="268445575" symbol="plotHRgraph"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="602" pc="268445645" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="604" pc="268445649" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="607" pc="268445735" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="608" pc="268445749" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="610" pc="268445758" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="611" pc="268445772" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="613" pc="268445781" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="614" pc="268445795" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="616" pc="268445804" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="617" pc="268445818" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="619" pc="268445827" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="620" pc="268445841" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="624" pc="268445850" symbol="getHRTestColour"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="627" pc="268445857" symbol="clamp"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="628" pc="268445861" symbol="clamp"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="628" pc="268445869" symbol="clamp"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="629" pc="268445875" symbol="clamp"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="629" pc="268445883" symbol="clamp"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="630" pc="268445889" symbol="clamp"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="633" pc="268445893" symbol="testFonts"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="635" pc="268445897" symbol="testFonts"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="636" pc="268445935" symbol="testFonts"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="637" pc="268445973" symbol="testFonts"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="639" pc="268446013" symbol="testFonts"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="641" pc="268446101" symbol="testFonts"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHWorkoutView.mc" lineNum="655" pc="268446189" symbol="testFonts"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="21" pc="268446191" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="22" pc="268446195" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="28" pc="268446213" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="29" pc="268446243" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="33" pc="268446274" symbol="getInitialView"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="35" pc="268446278" symbol="getInitialView"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="39" pc="268446346" symbol="onSettingsChanged"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="40" pc="268446350" symbol="onSettingsChanged"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHApp.mc" lineNum="41" pc="268446368" symbol="onSettingsChanged"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="9" pc="268446385" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="10" pc="268446389" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="11" pc="268446407" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="15" pc="268446438" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="18" pc="268446467" symbol="getIHMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="20" pc="268446471" symbol="getIHMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="22" pc="268446499" symbol="getIHMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="23" pc="268446521" symbol="getIHMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="25" pc="268446543" symbol="getIHMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="26" pc="268446565" symbol="getIHMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="28" pc="268446587" symbol="getIHMenu"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="32" pc="268446591" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="35" pc="268446595" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="37" pc="268446606" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="39" pc="268446634" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="40" pc="268446670" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="41" pc="268446689" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="44" pc="268446739" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="45" pc="268446791" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="49" pc="268446797" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="51" pc="268446808" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="52" pc="268446836" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="53" pc="268446858" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="54" pc="268446880" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="55" pc="268446932" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="59" pc="268446938" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="61" pc="268446949" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="62" pc="268446977" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="63" pc="268446999" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="64" pc="268447021" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="65" pc="268447073" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="69" pc="268447079" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="71" pc="268447090" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="72" pc="268447118" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="73" pc="268447140" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="74" pc="268447162" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="75" pc="268447214" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="89" pc="268447220" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="90" pc="268447231" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="91" pc="268447272" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="92" pc="268447300" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="94" pc="268447306" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="95" pc="268447317" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="96" pc="268447358" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="97" pc="268447386" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="101" pc="268447392" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="102" pc="268447403" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="103" pc="268447444" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="104" pc="268447472" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="106" pc="268447478" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="107" pc="268447489" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="108" pc="268447530" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="109" pc="268447558" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="113" pc="268447564" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="114" pc="268447575" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="115" pc="268447616" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="116" pc="268447644" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="118" pc="268447650" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="119" pc="268447661" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="120" pc="268447702" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="121" pc="268447730" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="139" pc="268447736" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="140" pc="268447772" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="141" pc="268447791" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="143" pc="268447805" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="145" pc="268447852" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="147" pc="268447899" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="148" pc="268447925" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="149" pc="268447953" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="150" pc="268448034" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="152" pc="268448040" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="153" pc="268448081" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="154" pc="268448109" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="161" pc="268448128" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="170" pc="268448132" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="171" pc="268448136" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="173" pc="268448154" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="176" pc="268448186" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="177" pc="268448190" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="178" pc="268448208" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="180" pc="268448252" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHMenuDelegate.mc" lineNum="183" pc="268448293" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="67" pc="268448322" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="75" pc="268448326" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="76" pc="268448372" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="79" pc="268448406" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="80" pc="268448415" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="83" pc="268448425" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="89" pc="268448455" symbol="startWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="91" pc="268448459" symbol="startWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="97" pc="268448475" symbol="startWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="98" pc="268448487" symbol="startWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="99" pc="268448505" symbol="startWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="103" pc="268448518" symbol="resumeWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="104" pc="268448522" symbol="resumeWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="105" pc="268448538" symbol="resumeWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="106" pc="268448556" symbol="resumeWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="110" pc="268448569" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="112" pc="268448573" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="114" pc="268448589" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="115" pc="268448607" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="117" pc="268448619" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="118" pc="268448647" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="119" pc="268448670" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="120" pc="268448692" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="121" pc="268448714" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="123" pc="268448736" symbol="stopWorkout"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="127" pc="268448793" symbol="onStartStop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="128" pc="268448797" symbol="onStartStop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="129" pc="268448817" symbol="onStartStop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="131" pc="268448832" symbol="onStartStop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="136" pc="268448845" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="138" pc="268448849" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="142" pc="268448868" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="143" pc="268448912" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="144" pc="268448945" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="147" pc="268448969" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="150" pc="268449004" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="151" pc="268449020" symbol="confirmStart"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="156" pc="268449033" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="158" pc="268449037" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="161" pc="268449055" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="165" pc="268449073" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="166" pc="268449155" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="169" pc="268449189" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="174" pc="268449231" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="175" pc="268449235" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="179" pc="268449253" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="180" pc="268449335" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="183" pc="268449369" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="187" pc="268449411" symbol="onFinish"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="189" pc="268449415" symbol="onFinish"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="190" pc="268449431" symbol="onFinish"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="191" pc="268449459" symbol="onFinish"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="205" pc="268449488" symbol="getTime"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="206" pc="268449492" symbol="getTime"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="210" pc="268449511" symbol="onSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="211" pc="268449515" symbol="onSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="215" pc="268449536" symbol="onExit"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="216" pc="268449540" symbol="onExit"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="221" pc="268449557" symbol="loadPreferences"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="223" pc="268449561" symbol="loadPreferences"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="226" pc="268449590" symbol="loadPreferences"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="231" pc="268449630" symbol="loadPreferences"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="236" pc="268449698" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="238" pc="268449702" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="239" pc="268449715" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="242" pc="268449728" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="243" pc="268449758" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="244" pc="268449771" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="245" pc="268449802" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="249" pc="268449830" symbol="getActivityString"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="254" pc="268449837" symbol="turnOnBacklight"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="263" pc="268449842" symbol="onBacklightTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="269" pc="268449847" symbol="backlight"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="270" pc="268449851" symbol="backlight"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="271" pc="268449866" symbol="backlight"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="275" pc="268449888" symbol="notifyShort"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="276" pc="268449892" symbol="notifyShort"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="277" pc="268449904" symbol="notifyShort"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="280" pc="268449922" symbol="restartSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="281" pc="268449926" symbol="restartSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="282" pc="268449962" symbol="restartSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="286" pc="268449973" symbol="toggleSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="287" pc="268449977" symbol="toggleSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="288" pc="268449991" symbol="toggleSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="289" pc="268450011" symbol="toggleSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="292" pc="268450024" symbol="toggleSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="293" pc="268450042" symbol="toggleSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="297" pc="268450053" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="298" pc="268450057" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="299" pc="268450068" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="300" pc="268450071" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="302" pc="268450082" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="306" pc="268450137" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="308" pc="268450148" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="312" pc="268450203" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="314" pc="268450214" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="320" pc="268450357" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="322" pc="268450368" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="331" pc="268450599" symbol="vibrate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="341" pc="268450621" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="342" pc="268450625" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="343" pc="268450642" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="345" pc="268450646" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="346" pc="268450653" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="348" pc="268450668" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="350" pc="268450675" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="351" pc="268450701" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="352" pc="268450701" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="354" pc="268450724" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="361" pc="268450748" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="362" pc="268450777" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="363" pc="268450781" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="366" pc="268450800" symbol="getNumbericPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="372" pc="268450804" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="373" pc="268450808" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="374" pc="268450825" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="376" pc="268450829" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="378" pc="268450859" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="379" pc="268450866" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="381" pc="268450881" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="382" pc="268450888" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="383" pc="268450918" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="384" pc="268450944" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="385" pc="268450968" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="388" pc="268450974" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="389" pc="268450985" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="395" pc="268450997" symbol="getBooleanPref"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="399" pc="268451001" symbol="getActivityType"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="400" pc="268451005" symbol="getActivityType"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="401" pc="268451048" symbol="getActivityType"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="405" pc="268451052" symbol="getActivitySubType"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="406" pc="268451056" symbol="getActivitySubType"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="407" pc="268451099" symbol="getActivitySubType"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="411" pc="268451103" symbol="getAllowVibration"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="412" pc="268451107" symbol="getAllowVibration"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="413" pc="268451130" symbol="getAllowVibration"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="424" pc="268451134" symbol="getGPSTracking"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="425" pc="268451138" symbol="getGPSTracking"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="426" pc="268451161" symbol="getGPSTracking"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="430" pc="268451165" symbol="getDarkModeSetting"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="431" pc="268451169" symbol="getDarkModeSetting"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="432" pc="268451192" symbol="getDarkModeSetting"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="436" pc="268451196" symbol="getBattTempSetting"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="437" pc="268451200" symbol="getBattTempSetting"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="438" pc="268451223" symbol="getBattTempSetting"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="446" pc="268451227" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="447" pc="268451231" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="451" pc="268451250" symbol="onBack"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="452" pc="268451254" symbol="onBack"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="461" pc="268451258" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="462" pc="268451262" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="464" pc="268451280" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="467" pc="268451312" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="468" pc="268451316" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="469" pc="268451334" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="481" pc="268451366" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="482" pc="268451370" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="483" pc="268451388" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="487" pc="268451420" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="489" pc="268451424" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="490" pc="268451435" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="492" pc="268451456" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="493" pc="268451467" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="495" pc="268451488" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="496" pc="268451499" symbol="onMenuItem"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="505" pc="268451584" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="506" pc="268451588" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="508" pc="268451606" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="511" pc="268451638" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="512" pc="268451642" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHController.mc" lineNum="513" pc="268451660" symbol="onResponse"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/Log.mc" lineNum="10" pc="268451682" symbol="isDebugEnabled"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/Log.mc" lineNum="11" pc="268451694" symbol="isDebugEnabled"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/Log.mc" lineNum="15" pc="268451704" symbol="debug"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/Log.mc" lineNum="16" pc="268451716" symbol="debug"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/Log.mc" lineNum="17" pc="268451727" symbol="debug"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/Log.mc" lineNum="18" pc="268451744" symbol="debug"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/Log.mc" lineNum="24" pc="268451872" symbol="debug"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="89" pc="268451894" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="91" pc="268451898" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="93" pc="268451911" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="97" pc="268451924" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="99" pc="268451937" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="103" pc="268451950" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="105" pc="268451964" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="106" pc="268451978" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="107" pc="268451988" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="108" pc="268451998" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="109" pc="268452008" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="110" pc="268452021" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="112" pc="268452034" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="113" pc="268452047" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="116" pc="268452060" symbol="initialize"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="121" pc="268452073" symbol="start"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="123" pc="268452077" symbol="start"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="125" pc="268452111" symbol="start"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="127" pc="268452152" symbol="start"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="127" pc="268452165" symbol="start"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="131" pc="268452187" symbol="stop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="133" pc="268452191" symbol="stop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="135" pc="268452209" symbol="stop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="135" pc="268452222" symbol="stop"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="139" pc="268452244" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="140" pc="268452248" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="140" pc="268452262" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="141" pc="268452309" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="141" pc="268452322" symbol="save"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="145" pc="268452344" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="146" pc="268452348" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="146" pc="268452362" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="147" pc="268452409" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="147" pc="268452422" symbol="discard"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="151" pc="268452444" symbol="getCalories"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="152" pc="268452448" symbol="getCalories"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="156" pc="268452458" symbol="isGPSOn"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="157" pc="268452462" symbol="isGPSOn"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="161" pc="268452472" symbol="getInfoHeartRate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="162" pc="268452476" symbol="getInfoHeartRate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="163" pc="268452493" symbol="getInfoHeartRate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="164" pc="268452503" symbol="getInfoHeartRate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="165" pc="268452510" symbol="getInfoHeartRate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="167" pc="268452516" symbol="getInfoHeartRate"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="172" pc="268452523" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="173" pc="268452527" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="174" pc="268452544" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="175" pc="268452575" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="177" pc="268452605" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="179" pc="268452628" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="180" pc="268452635" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="180" pc="268452653" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="181" pc="268452672" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="183" pc="268452734" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="186" pc="268452743" symbol="getTemperature"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="190" pc="268452750" symbol="getPeakHR"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="191" pc="268452754" symbol="getPeakHR"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="195" pc="268452764" symbol="getPeakHRpct"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="196" pc="268452768" symbol="getPeakHRpct"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="200" pc="268452835" symbol="getHRbpm"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="201" pc="268452839" symbol="getHRbpm"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="205" pc="268452849" symbol="getMaxHRbpm"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="206" pc="268452853" symbol="getMaxHRbpm"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="210" pc="268452863" symbol="getAvgHRbpm"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="211" pc="268452867" symbol="getAvgHRbpm"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="215" pc="268452877" symbol="getTimeElapsed"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="216" pc="268452881" symbol="getTimeElapsed"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="220" pc="268452891" symbol="getSecondaryTimeElapsed"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="221" pc="268452895" symbol="getSecondaryTimeElapsed"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="225" pc="268452930" symbol="startSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="226" pc="268452934" symbol="startSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="230" pc="268452961" symbol="resetSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="231" pc="268452965" symbol="resetSecondaryTimer"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="235" pc="268452979" symbol="getZoneTimes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="237" pc="268452983" symbol="getZoneTimes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="238" pc="268452991" symbol="getZoneTimes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="239" pc="268453021" symbol="getZoneTimes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="240" pc="268453037" symbol="getZoneTimes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="243" pc="268453050" symbol="getZoneTimes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="247" pc="268453085" symbol="getZoneTimes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="250" pc="268453089" symbol="getIntesityMinutes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="252" pc="268453093" symbol="getIntesityMinutes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="253" pc="268453142" symbol="getIntesityMinutes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="255" pc="268453191" symbol="getIntesityMinutes"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="261" pc="268453198" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="262" pc="268453202" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="263" pc="268453213" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="264" pc="268453226" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="265" pc="268453242" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="266" pc="268453279" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="267" pc="268453292" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="270" pc="268453305" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="272" pc="268453339" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="274" pc="268453355" symbol="setSensor"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="285" pc="268453369" symbol="setGPSTracking"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="286" pc="268453373" symbol="setGPSTracking"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="287" pc="268453383" symbol="setGPSTracking"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="287" pc="268453397" symbol="setGPSTracking"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="292" pc="268453445" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="293" pc="268453449" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="294" pc="268453466" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="296" pc="268453473" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="297" pc="268453486" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="300" pc="268453511" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="301" pc="268453524" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="303" pc="268453543" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="306" pc="268453556" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="307" pc="268453569" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="310" pc="268453588" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="311" pc="268453601" symbol="setStats"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="318" pc="268453624" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="321" pc="268453628" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="322" pc="268453648" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="324" pc="268453657" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="325" pc="268453677" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="327" pc="268453686" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="328" pc="268453706" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="330" pc="268453715" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="331" pc="268453735" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="333" pc="268453744" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="334" pc="268453764" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="337" pc="268453773" symbol="getHRZoneColorIndex"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="341" pc="268453780" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="343" pc="268453784" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="343" pc="268453797" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="346" pc="268453801" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="347" pc="268453827" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="348" pc="268453849" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="349" pc="268453875" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="350" pc="268453897" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="351" pc="268453923" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="352" pc="268453945" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="353" pc="268453971" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="354" pc="268453993" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="355" pc="268454019" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="358" pc="268454041" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="360" pc="268454135" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="361" pc="268454152" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="363" pc="268454159" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="364" pc="268454172" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="366" pc="268454191" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="369" pc="268454204" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="370" pc="268454217" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="372" pc="268454236" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="375" pc="268454249" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="376" pc="268454262" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="378" pc="268454281" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="383" pc="268454297" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="386" pc="268454316" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="389" pc="268454363" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="390" pc="268454377" symbol="hrFieldsCallback"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="396" pc="268454400" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="398" pc="268454404" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="399" pc="268454427" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="400" pc="268454483" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="403" pc="268454506" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="404" pc="268454517" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="410" pc="268454530" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="411" pc="268454547" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="413" pc="268454563" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="416" pc="268454570" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="417" pc="268454595" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="420" pc="268454605" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="422" pc="268454616" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="425" pc="268454635" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="429" pc="268454651" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="430" pc="268454684" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="437" pc="268454700" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="438" pc="268454733" symbol="setZones"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="442" pc="268454812" symbol="setActivity"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="443" pc="268454816" symbol="setActivity"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="445" pc="268454833" symbol="setActivity"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="446" pc="268454866" symbol="setActivity"/>
+<entry filename="/Users/wgv/GarminIQ-InstaHiiT-workspace/InstaHiiT/./source/IHModel.mc" lineNum="451" pc="268454932" symbol="onPosition"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="8388698" method="true" symbol="start"/>
+<entry id="91" method="true" symbol="onStartStop"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="179" symbol="ActivityType"/>
+<entry field="true" id="145" symbol="zoneTimes"/>
+<entry field="true" id="49" symbol="devXCenter"/>
+<entry id="188" symbol="BattTempOff"/>
+<entry field="true" id="61" symbol="isSecondaryTimerStarted"/>
+<entry id="8389101" method="true" symbol="onSwipe"/>
+<entry id="8389793" method="true" symbol="debug"/>
+<entry id="8389781" module="true" symbol="SensorHistory"/>
+<entry id="107" method="true" symbol="getActivitySubType"/>
+<entry field="true" id="65" symbol="FONTXTINY"/>
+<entry id="102" method="true" symbol="restartSecondaryTimer"/>
+<entry id="110" method="true" symbol="getDarkModeSetting"/>
+<entry field="true" id="112" symbol="model"/>
+<entry id="56" method="true" symbol="getTimeString"/>
+<entry field="true" id="80" symbol="ALLOW_VIBRATION"/>
+<entry id="8388987" method="true" symbol="vibrate"/>
+<entry field="true" id="39" symbol="maxSecs"/>
+<entry field="true" id="24" symbol="mTimer"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="20" module="true" symbol="Log"/>
+<entry field="true" id="82" symbol="ALLOW_DARKMODE"/>
+<entry id="189" symbol="resume"/>
+<entry field="true" id="28" symbol="uiColorsArray"/>
+<entry field="true" id="77" symbol="forceOnUpdate"/>
+<entry field="true" id="67" symbol="FONTSMALL"/>
+<entry id="10" object="true" symbol="IHWorkoutDelegate"/>
+<entry field="true" id="73" symbol="UISTATE_STOPPED"/>
+<entry field="true" id="142" symbol="mAverageHR"/>
+<entry id="170" method="true" symbol="setSensor"/>
+<entry id="8389097" method="true" symbol="onKey"/>
+<entry id="52" method="true" symbol="drawTimers"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry field="true" id="42" symbol="totWidth"/>
+<entry id="8388883" method="true" symbol="discard"/>
+<entry id="106" method="true" symbol="getActivityType"/>
+<entry field="true" id="138" symbol="mHeartRate"/>
+<entry field="true" id="113" symbol="controller"/>
+<entry field="true" id="40" symbol="tickInterval"/>
+<entry id="11" object="true" symbol="IHWorkoutView"/>
+<entry id="193" symbol="running"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="120" symbol="RobotoCondensedReg16"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="51" method="true" symbol="drawSlowUpdatingFields"/>
+<entry id="96" method="true" symbol="onExit"/>
+<entry id="90" method="true" symbol="stopWorkout"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry field="true" id="85" symbol="GPSDisabled"/>
+<entry id="8388643" module="true" symbol="Sensor"/>
+<entry field="true" id="140" symbol="mZones"/>
+<entry id="176" method="true" symbol="setActivity"/>
+<entry field="true" id="66" symbol="FONTTINY"/>
+<entry id="13" object="true" symbol="IHMenuDelegate"/>
+<entry id="175" method="true" symbol="setZones"/>
+<entry field="true" id="122" symbol="RobotoMedium22"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="59" method="true" symbol="clamp"/>
+<entry id="99" method="true" symbol="turnOnBacklight"/>
+<entry id="186" symbol="DarkModeOff"/>
+<entry field="true" id="141" symbol="mZoneTimes"/>
+<entry field="true" id="87" symbol="mActivitiesStr"/>
+<entry id="12" object="true" symbol="IHApp"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="35" symbol="isDarkModeOn"/>
+<entry id="95" method="true" symbol="onSensor"/>
+<entry field="true" id="47" symbol="devWidth"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="46" symbol="yVal"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="68" symbol="FONTLARGE"/>
+<entry id="21" object="true" symbol="IHModel"/>
+<entry field="true" id="50" symbol="devYCenter"/>
+<entry id="159" method="true" symbol="getPeakHR"/>
+<entry id="19" object="true" symbol="DiscardConfirmationDelegate"/>
+<entry id="8388638" module="true" symbol="ActivityRecording"/>
+<entry id="187" symbol="BattTempOn"/>
+<entry id="156" method="true" symbol="isGPSOn"/>
+<entry field="true" id="137" symbol="mGPSOn"/>
+<entry field="true" id="132" symbol="mSecondarySeconds"/>
+<entry field="true" id="62" symbol="allowVibration"/>
+<entry id="8389098" method="true" symbol="onTap"/>
+<entry id="14" object="true" symbol="GPSConfirmationDelegate"/>
+<entry id="8388636" module="true" symbol="Attention"/>
+<entry id="105" method="true" symbol="getBooleanPref"/>
+<entry id="18" object="true" symbol="EndWorkoutDelegate"/>
+<entry id="194" symbol="sports"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="128" symbol="AppName"/>
+<entry id="190" symbol="strength_training"/>
+<entry id="8388935" method="true" symbol="duration"/>
+<entry id="94" method="true" symbol="getTime"/>
+<entry id="8388647" module="true" symbol="UserProfile"/>
+<entry id="101" method="true" symbol="notifyShort"/>
+<entry field="true" id="136" symbol="mStabilityOn"/>
+<entry field="true" id="44" symbol="totBins"/>
+<entry id="8388890" symbol="sport"/>
+<entry id="181" symbol="DarkMode"/>
+<entry field="true" id="8388892" symbol="name"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry field="true" id="151" symbol="tz5"/>
+<entry field="true" id="150" symbol="tz4"/>
+<entry field="true" id="149" symbol="tz3"/>
+<entry field="true" id="148" symbol="tz2"/>
+<entry field="true" id="147" symbol="tz1"/>
+<entry id="165" method="true" symbol="getSecondaryTimeElapsed"/>
+<entry field="true" id="64" symbol="FONTXXTINY"/>
+<entry id="57" method="true" symbol="plotHRgraph"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry field="true" id="71" symbol="UISTATE_READYTOSTART"/>
+<entry id="8389809" symbol="order"/>
+<entry id="8389108" method="true" symbol="onResponse"/>
+<entry id="169" method="true" symbol="getIntesityMinutes"/>
+<entry field="true" id="119" symbol="LauncherIcon"/>
+<entry field="true" id="131" symbol="mSeconds"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry field="true" id="31" symbol="selectedActivityStr"/>
+<entry field="true" id="78" symbol="ACTIVITY_TYPE"/>
+<entry id="8389081" method="true" symbol="onBack"/>
+<entry id="171" method="true" symbol="setGPSTracking"/>
+<entry field="true" id="143" symbol="mPeakHR"/>
+<entry id="8388988" method="true" symbol="backlight"/>
+<entry id="182" symbol="BattTemp"/>
+<entry id="55" method="true" symbol="zoneChangeEvents"/>
+<entry id="8389141" object="true" symbol="Profile"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="63" symbol="FONTXXXTINY"/>
+<entry id="8388891" symbol="subSport"/>
+<entry field="true" id="135" symbol="mStabilityTimer"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="98" method="true" symbol="getActivityString"/>
+<entry field="true" id="144" symbol="mCalories"/>
+<entry field="true" id="139" symbol="mMaxHR"/>
+<entry id="108" method="true" symbol="getAllowVibration"/>
+<entry field="true" id="133" symbol="mSession"/>
+<entry id="168" method="true" symbol="getZoneTimes"/>
+<entry id="111" method="true" symbol="getBattTempSetting"/>
+<entry field="true" id="45" symbol="xValConst"/>
+<entry id="174" method="true" symbol="hrFieldsCallback"/>
+<entry id="15" object="true" symbol="IHController"/>
+<entry id="155" method="true" symbol="getCalories"/>
+<entry field="true" id="75" symbol="WorkoutUIState"/>
+<entry id="100" method="true" symbol="onBacklightTimer"/>
+<entry field="true" id="117" symbol="hr_red_24"/>
+<entry id="103" method="true" symbol="toggleSecondaryTimer"/>
+<entry id="129" method="true" symbol="isDebugEnabled"/>
+<entry field="true" id="127" symbol="AppDescription"/>
+<entry field="true" id="118" symbol="stopwatch_24"/>
+<entry field="true" id="34" symbol="currCharge"/>
+<entry id="109" method="true" symbol="getGPSTracking"/>
+<entry id="58" method="true" symbol="getHRTestColour"/>
+<entry field="true" id="146" symbol="actType"/>
+<entry id="172" method="true" symbol="setStats"/>
+<entry id="167" method="true" symbol="resetSecondaryTimer"/>
+<entry id="184" symbol="VibrationOff"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry id="114" method="true" symbol="getIHMenu"/>
+<entry field="true" id="79" symbol="ACTIVITY_SUB_TYPE"/>
+<entry field="true" id="41" symbol="totHeight"/>
+<entry id="192" symbol="hiking"/>
+<entry field="true" id="22" symbol="mModel"/>
+<entry field="true" id="29" symbol="prevZone"/>
+<entry field="true" id="124" symbol="RobotoCondensedBold30"/>
+<entry id="97" method="true" symbol="loadPreferences"/>
+<entry id="92" method="true" symbol="confirmStart"/>
+<entry id="177" method="true" symbol="onPosition"/>
+<entry field="true" id="123" symbol="RobotoCondensedBold28"/>
+<entry field="true" id="121" symbol="RobotoCondensedBold22"/>
+<entry field="true" id="26" symbol="uiHRZoneColor"/>
+<entry id="16" object="true" symbol="ProgressDelegate"/>
+<entry field="true" id="27" symbol="uiHRZoneValue"/>
+<entry id="157" method="true" symbol="getInfoHeartRate"/>
+<entry id="116" module="true" symbol="Layouts"/>
+<entry field="true" id="43" symbol="binPixels"/>
+<entry id="166" method="true" symbol="startSecondaryTimer"/>
+<entry id="8388642" module="true" symbol="Position"/>
+<entry field="true" id="23" symbol="mController"/>
+<entry id="158" method="true" symbol="getTemperature"/>
+<entry id="17" object="true" symbol="StartConfirmationDelegate"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="70" symbol="UISTATE_WAITINGFORHR"/>
+<entry field="true" id="84" symbol="GPSCapable"/>
+<entry id="173" method="true" symbol="getHRZoneColorIndex"/>
+<entry field="true" id="69" symbol="FONTXXLARGE"/>
+<entry field="true" id="37" symbol="heartMin"/>
+<entry field="true" id="48" symbol="devHeight"/>
+<entry id="8388882" method="true" symbol="save"/>
+<entry field="true" id="86" symbol="mActivities"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="8389099" method="true" symbol="onHold"/>
+<entry id="185" symbol="DarkModeOn"/>
+<entry id="53" method="true" symbol="drawZonesLegend"/>
+<entry id="163" method="true" symbol="getAvgHRbpm"/>
+<entry field="true" id="36" symbol="showBattTempFields"/>
+<entry field="true" id="83" symbol="ALLOW_BATTTEMP"/>
+<entry id="60" method="true" symbol="testFonts"/>
+<entry id="162" method="true" symbol="getMaxHRbpm"/>
+<entry id="164" method="true" symbol="getTimeElapsed"/>
+<entry field="true" id="74" symbol="UISTATE_WORKOUTEND"/>
+<entry field="true" id="32" symbol="maxHR"/>
+<entry field="true" id="81" symbol="ALLOW_GPSTRACKING"/>
+<entry field="true" id="76" symbol="hrZoneMode"/>
+<entry id="115" module="true" symbol="Menus"/>
+<entry field="true" id="8388960" symbol="heartRate"/>
+<entry field="true" id="38" symbol="heartMax"/>
+<entry id="104" method="true" symbol="getNumbericPref"/>
+<entry id="89" method="true" symbol="resumeWorkout"/>
+<entry id="180" symbol="AllowVibration"/>
+<entry field="true" id="154" symbol="mActTypesStr"/>
+<entry field="true" id="134" symbol="mStability"/>
+<entry id="93" method="true" symbol="onFinish"/>
+<entry field="true" id="72" symbol="UISTATE_RUNNING"/>
+<entry id="161" method="true" symbol="getHRbpm"/>
+<entry field="true" id="153" symbol="mActSubTypes"/>
+<entry field="true" id="30" symbol="vibeTime"/>
+<entry id="88" method="true" symbol="startWorkout"/>
+<entry field="true" id="126" symbol="RobotoBlack76"/>
+<entry field="true" id="130" symbol="DEBUG"/>
+<entry field="true" id="152" symbol="mActTypes"/>
+<entry id="183" symbol="VibrationOn"/>
+<entry field="true" id="25" symbol="uiBlinkToggle"/>
+<entry id="8388699" method="true" symbol="stop"/>
+<entry id="54" method="true" symbol="onTimer"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="191" symbol="cardio_training"/>
+<entry field="true" id="125" symbol="RobotoBlack39"/>
+<entry field="true" id="33" symbol="currTemperature"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry id="160" method="true" symbol="getPeakHRpct"/>
+</symbolTable>
+<localVars>
+<entry endPc="268436134" name="key" stackId="1" startPc="268435821"/>
+<entry endPc="268436169" name="type" stackId="1" startPc="268436134"/>
+<entry endPc="268436204" name="type" stackId="1" startPc="268436169"/>
+<entry endPc="268436370" name="swipeEvent" stackId="1" startPc="268436204"/>
+<entry endPc="268436770" name="dc" stackId="1" startPc="268436594"/>
+<entry endPc="268438885" name="peakHRCombo" stackId="4" startPc="268437799"/>
+<entry endPc="268438885" name="peakHR" stackId="3" startPc="268437799"/>
+<entry endPc="268438885" name="percSymOffset" stackId="5" startPc="268437799"/>
+<entry endPc="268439647" name="curZone" stackId="7" startPc="268438920"/>
+<entry endPc="268439647" name="currHRRpct" stackId="8" startPc="268438920"/>
+<entry endPc="268439647" name="heartRate" stackId="6" startPc="268438920"/>
+<entry endPc="268441101" name="heartRate" stackId="9" startPc="268440220"/>
+<entry endPc="268441104" name="timer" stackId="2" startPc="268437586"/>
+<entry endPc="268441105" name="dc" stackId="1" startPc="268437582"/>
+<entry endPc="268441746" name="battY" stackId="4" startPc="268441109"/>
+<entry endPc="268441746" name="battX" stackId="3" startPc="268441109"/>
+<entry endPc="268441746" name="chargeHeight" stackId="5" startPc="268441109"/>
+<entry endPc="268441747" name="dc" stackId="1" startPc="268441105"/>
+<entry endPc="268441747" name="timer" stackId="2" startPc="268441105"/>
+<entry endPc="268442260" name="secondaryTimerString" stackId="5" startPc="268441751"/>
+<entry endPc="268442260" name="timerString" stackId="3" startPc="268441751"/>
+<entry endPc="268442260" name="secondaryTimer" stackId="4" startPc="268441751"/>
+<entry endPc="268442261" name="dc" stackId="1" startPc="268441747"/>
+<entry endPc="268442261" name="timer" stackId="2" startPc="268441747"/>
+<entry endPc="268443084" name="hrZoneArray" stackId="2" startPc="268442265"/>
+<entry endPc="268443085" name="dc" stackId="1" startPc="268442261"/>
+<entry endPc="268443314" name="zone" stackId="1" startPc="268443132"/>
+<entry endPc="268443314" name="timer" stackId="2" startPc="268443132"/>
+<entry endPc="268443502" name="hour" stackId="3" startPc="268443318"/>
+<entry endPc="268443502" name="hh" stackId="2" startPc="268443318"/>
+<entry endPc="268443502" name="timeString" stackId="4" startPc="268443318"/>
+<entry endPc="268443502" name="time" stackId="1" startPc="268443318"/>
+<entry endPc="268444095" name="stopWhile" stackId="7" startPc="268443841"/>
+<entry endPc="268444095" name="fheart" stackId="8" startPc="268443841"/>
+<entry endPc="268444095" name="timeLimit" stackId="6" startPc="268443841"/>
+<entry endPc="268445301" name="i" stackId="27" startPc="268444752"/>
+<entry endPc="268445631" name="tickLengh" stackId="31" startPc="268445344"/>
+<entry endPc="268445644" name="i" stackId="30" startPc="268445344"/>
+<entry endPc="268445644" name="maxSecsDuration" stackId="4" startPc="268443507"/>
+<entry endPc="268445644" name="heartBinMax" stackId="16" startPc="268443507"/>
+<entry endPc="268445644" name="xIndicator" stackId="26" startPc="268443507"/>
+<entry endPc="268445644" name="xVal" stackId="25" startPc="268443507"/>
+<entry endPc="268445644" name="heart" stackId="9" startPc="268443507"/>
+<entry endPc="268445644" name="iOffSet" stackId="29" startPc="268443507"/>
+<entry endPc="268445644" name="heartSecs" stackId="12" startPc="268443507"/>
+<entry endPc="268445644" name="binWidthSecs" stackId="3" startPc="268443507"/>
+<entry endPc="268445644" name="finished" stackId="22" startPc="268443507"/>
+<entry endPc="268445644" name="prevHeight" stackId="23" startPc="268443507"/>
+<entry endPc="268445644" name="prevHeartBinMin" stackId="18" startPc="268443507"/>
+<entry endPc="268445644" name="xTickIndicator" stackId="28" startPc="268443507"/>
+<entry endPc="268445644" name="tHeartBinMax" stackId="21" startPc="268443507"/>
+<entry endPc="268445644" name="secsBin" stackId="14" startPc="268443507"/>
+<entry endPc="268445644" name="height" stackId="24" startPc="268443507"/>
+<entry endPc="268445644" name="prevHeartBinMax" stackId="19" startPc="268443507"/>
+<entry endPc="268445644" name="tempHeartBin" stackId="20" startPc="268443507"/>
+<entry endPc="268445644" name="curHeartMin" stackId="10" startPc="268443507"/>
+<entry endPc="268445644" name="lastHeartSecs" stackId="15" startPc="268443507"/>
+<entry endPc="268445644" name="curHeartMax" stackId="11" startPc="268443507"/>
+<entry endPc="268445644" name="sample" stackId="5" startPc="268443507"/>
+<entry endPc="268445644" name="heartValue" stackId="13" startPc="268443507"/>
+<entry endPc="268445644" name="heartBinMin" stackId="17" startPc="268443507"/>
+<entry endPc="268445645" name="dc" stackId="1" startPc="268443503"/>
+<entry endPc="268445645" name="timer" stackId="2" startPc="268443503"/>
+<entry endPc="268445856" name="mZones" stackId="2" startPc="268445649"/>
+<entry endPc="268445857" name="mHeartRate" stackId="1" startPc="268445645"/>
+<entry endPc="268445893" name="max" stackId="2" startPc="268445857"/>
+<entry endPc="268445893" name="min" stackId="1" startPc="268445857"/>
+<entry endPc="268445893" name="value" stackId="3" startPc="268445857"/>
+<entry endPc="268446191" name="dc" stackId="1" startPc="268445893"/>
+<entry endPc="268446590" name="menu" stackId="1" startPc="268446471"/>
+<entry endPc="268446726" name="actMenuIDArray" stackId="4" startPc="268446670"/>
+<entry endPc="268446739" name="i" stackId="3" startPc="268446670"/>
+<entry endPc="268446794" name="actMenu" stackId="2" startPc="268446606"/>
+<entry endPc="268446935" name="menu" stackId="5" startPc="268446808"/>
+<entry endPc="268447076" name="menu" stackId="6" startPc="268446949"/>
+<entry endPc="268447217" name="menu" stackId="7" startPc="268447090"/>
+<entry endPc="268448115" name="actMenuIDArray" stackId="9" startPc="268447772"/>
+<entry endPc="268448128" name="i" stackId="8" startPc="268447772"/>
+<entry endPc="268448132" name="item" stackId="1" startPc="268446591"/>
+<entry endPc="268448322" name="value" stackId="1" startPc="268448186"/>
+<entry endPc="268448792" name="menu" stackId="1" startPc="268448573"/>
+<entry endPc="268449001" name="dialog" stackId="2" startPc="268448912"/>
+<entry endPc="268449001" name="delegate" stackId="3" startPc="268448912"/>
+<entry endPc="268449032" name="heartrate" stackId="1" startPc="268448849"/>
+<entry endPc="268449536" name="sensor_info" stackId="1" startPc="268449511"/>
+<entry endPc="268449817" name="actMenuIDArray" stackId="4" startPc="268449758"/>
+<entry endPc="268449830" name="i" stackId="3" startPc="268449758"/>
+<entry endPc="268449836" name="type" stackId="1" startPc="268449702"/>
+<entry endPc="268449836" name="subType" stackId="2" startPc="268449702"/>
+<entry endPc="268449888" name="on" stackId="1" startPc="268449847"/>
+<entry endPc="268450617" name="VibeData" stackId="2" startPc="268450068"/>
+<entry endPc="268450621" name="style" stackId="1" startPc="268450053"/>
+<entry endPc="268450803" name="pref" stackId="6" startPc="268450625"/>
+<entry endPc="268450803" name="app" stackId="5" startPc="268450625"/>
+<entry endPc="268450804" name="max" stackId="4" startPc="268450621"/>
+<entry endPc="268450804" name="name" stackId="1" startPc="268450621"/>
+<entry endPc="268450804" name="min" stackId="3" startPc="268450621"/>
+<entry endPc="268450804" name="def" stackId="2" startPc="268450621"/>
+<entry endPc="268451000" name="pref" stackId="4" startPc="268450808"/>
+<entry endPc="268451000" name="app" stackId="3" startPc="268450808"/>
+<entry endPc="268451001" name="name" stackId="1" startPc="268450804"/>
+<entry endPc="268451001" name="def" stackId="2" startPc="268450804"/>
+<entry endPc="268451051" name="type" stackId="1" startPc="268451005"/>
+<entry endPc="268451102" name="subType" stackId="1" startPc="268451056"/>
+<entry endPc="268451133" name="value" stackId="1" startPc="268451107"/>
+<entry endPc="268451164" name="value" stackId="1" startPc="268451138"/>
+<entry endPc="268451195" name="value" stackId="1" startPc="268451169"/>
+<entry endPc="268451226" name="value" stackId="1" startPc="268451200"/>
+<entry endPc="268451366" name="value" stackId="1" startPc="268451312"/>
+<entry endPc="268451584" name="item" stackId="1" startPc="268451420"/>
+<entry endPc="268451682" name="value" stackId="1" startPc="268451638"/>
+<entry endPc="268451890" name="clock" stackId="2" startPc="268451727"/>
+<entry endPc="268451890" name="msg" stackId="3" startPc="268451727"/>
+<entry endPc="268451894" name="text" stackId="1" startPc="268451704"/>
+<entry endPc="268452522" name="heartRate" stackId="2" startPc="268452476"/>
+<entry endPc="268452522" name="info" stackId="1" startPc="268452476"/>
+<entry endPc="268452740" name="sensorIter" stackId="1" startPc="268452544"/>
+<entry endPc="268452740" name="temp" stackId="2" startPc="268452544"/>
+<entry endPc="268452740" name="tempUnit" stackId="3" startPc="268452544"/>
+<entry endPc="268452961" name="firstStart" stackId="1" startPc="268452930"/>
+<entry endPc="268453085" name="i" stackId="2" startPc="268453021"/>
+<entry endPc="268453088" name="hrZoneMinutes" stackId="1" startPc="268452983"/>
+<entry endPc="268453197" name="zt5" stackId="2" startPc="268453093"/>
+<entry endPc="268453197" name="zt4" stackId="1" startPc="268453093"/>
+<entry endPc="268453369" name="sensor_info" stackId="1" startPc="268453198"/>
+<entry endPc="268453445" name="option" stackId="1" startPc="268453369"/>
+<entry endPc="268453623" name="activity" stackId="1" startPc="268453449"/>
+<entry endPc="268453780" name="fHeartRate" stackId="1" startPc="268453624"/>
+<entry endPc="268454399" name="activity" stackId="1" startPc="268453784"/>
+<entry endPc="268454700" name="userAge" stackId="4" startPc="268454563"/>
+<entry endPc="268454811" name="birthYear" stackId="1" startPc="268454404"/>
+<entry endPc="268454811" name="todayYear" stackId="2" startPc="268454404"/>
+<entry endPc="268454811" name="genericZoneInfo" stackId="5" startPc="268454404"/>
+<entry endPc="268454811" name="gender" stackId="3" startPc="268454404"/>
+<entry endPc="268454932" name="type" stackId="1" startPc="268454812"/>
+<entry endPc="268454932" name="subType" stackId="2" startPc="268454812"/>
+<entry endPc="268454937" name="info" stackId="1" startPc="268454932"/>
+</localVars>
+<annotations/>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="IHWorkoutDelegate">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onBack" parent="IHWorkoutDelegate">
+<documentation><![CDATA[<div class="description"> Back button pressed<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenu" parent="IHWorkoutDelegate">
+<documentation><![CDATA[<div class="description"> Menu button pressed / VivoActive3 LongPress<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onKey" parent="IHWorkoutDelegate">
+<param id="key"/>
+<documentation><![CDATA[<div class="description"> Main Button Pressed<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onTap" parent="IHWorkoutDelegate">
+<param id="type"/>
+<documentation><![CDATA[<div class="description"> Screen Tap<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onHold" parent="IHWorkoutDelegate">
+<param id="type"/>
+<documentation><![CDATA[<div class="description"> Screen Tap<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onSwipe" parent="IHWorkoutDelegate">
+<param id="swipeEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="IHWorkoutView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="IHWorkoutView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Load your resources here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="IHWorkoutView">
+<documentation><![CDATA[<div class="description"> Called when this View is brought to the foreground. Restore<br/> the state of this View and prepare it to be shown. This includes<br/> loading resources into memory.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="IHWorkoutView">
+<documentation><![CDATA[<div class="description"> Called when this View is removed from the screen. Save the<br/> state of this View here. This includes freeing resources from<br/> memory.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="IHWorkoutView">
+<param id="dc"/>
+<documentation><![CDATA[<div class="description"> Update the view<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="drawSlowUpdatingFields" parent="IHWorkoutView">
+<param id="dc"/>
+<param id="timer"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawTimers" parent="IHWorkoutView">
+<param id="dc"/>
+<param id="timer"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawZonesLegend" parent="IHWorkoutView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onTimer" parent="IHWorkoutView">
+<documentation><![CDATA[<div class="description"> Handler for the timer callback<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="zoneChangeEvents" parent="IHWorkoutView">
+<param id="zone"/>
+<param id="timer"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getTimeString" parent="IHWorkoutView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="plotHRgraph" parent="IHWorkoutView">
+<param id="dc"/>
+<param id="timer"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getHRTestColour" parent="IHWorkoutView">
+<param id="mHeartRate"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="clamp" parent="IHWorkoutView">
+<param id="min"/>
+<param id="max"/>
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="testFonts" parent="IHWorkoutView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="IHApp">
+<documentation><![CDATA[<div class="description"> Initialize App<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="IHApp">
+<documentation><![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onSettingsChanged" parent="IHApp">
+<documentation><![CDATA[<div class="description"> New app settings have been received<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="IHMenuDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getIHMenu" parent="IHMenuDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenuItem" parent="IHMenuDelegate">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="GPSConfirmationDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onResponse" parent="GPSConfirmationDelegate">
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="IHController">
+<documentation><![CDATA[<div class="description"> Initialize the controller<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="startWorkout" parent="IHController">
+<documentation><![CDATA[<div class="description"> Start the recording process<br/> If it was not previously started confirm the presense of a HR<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="protected" name="resumeWorkout" parent="IHController">
+<documentation><![CDATA[<div class="description"> Start the Model<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="protected" name="stopWorkout" parent="IHController">
+<documentation><![CDATA[<div class="description"> Stop/Pause the Model<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onStartStop" parent="IHController">
+<documentation><![CDATA[<div class="description"> Handle the start/stop button<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="confirmStart" parent="IHController">
+<documentation><![CDATA[<div class="description"> Confirmation of no HR<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="save" parent="IHController">
+<documentation><![CDATA[<div class="description"> Save the recording<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="discard" parent="IHController">
+<documentation><![CDATA[<div class="description"> Discard the recording<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onFinish" parent="IHController">
+<documentation><![CDATA[<div class="description"> Review the stats of the activity when finished<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getTime" parent="IHController">
+<documentation><![CDATA[<div class="description"> Are we running currently?<br/> Get the recording time elapsed<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onSensor" parent="IHController">
+<param id="sensor_info"/>
+<documentation><![CDATA[<div class="description"> Handle Sensor Events<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onExit" parent="IHController">
+<documentation><![CDATA[<div class="description"> Handle timing out after exit<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="loadPreferences" parent="IHController">
+<documentation><![CDATA[<div class="description"> Load preferences for the view from the object store.<br/> This can be called from the app when the settings have changed.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getActivityString" parent="IHController">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="turnOnBacklight" parent="IHController">
+<documentation><![CDATA[<div class="description"> Turn on backlight.<br/> Trigger a timer to turn off backlight after 3 seconds.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onBacklightTimer" parent="IHController">
+<documentation><![CDATA[<div class="description"> Action on backlight timer, turn off backlight and invalidate timer.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="backlight" parent="IHController">
+<param id="on"/>
+<documentation><![CDATA[<div class="description"> Turn on/off backlight based on given flag.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="protected" name="notifyShort" parent="IHController">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="restartSecondaryTimer" parent="IHController">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="toggleSecondaryTimer" parent="IHController">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="vibrate" parent="IHController">
+<param id="style"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getNumbericPref" parent="IHController">
+<param id="name"/>
+<param id="def"/>
+<param id="min"/>
+<param id="max"/>
+<documentation><![CDATA[<div class="description"> Return the number value for a preference, or the given default value if pref<br/> does not exist, is invalid, is less than the min or is greater than the max.<br/> <div class="param"> name the name of the preference</div><br/> <div class="param"> def the default value if preference value cannot be found</div><br/> <div class="param"> min the minimum authorized value for the preference</div><br/> <div class="param"> max the maximum authorized value for the preference</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getBooleanPref" parent="IHController">
+<param id="name"/>
+<param id="def"/>
+<documentation><![CDATA[<div class="description"> Return the boolean value for the preference<br/> <div class="param"> name the name of the preference</div><br/> <div class="param"> def the default value if preference value cannot be found</div><br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getActivityType" parent="IHController">
+<documentation><![CDATA[<div class="description"> Get activity type preference<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getActivitySubType" parent="IHController">
+<documentation><![CDATA[<div class="description"> Get activity sub-type preference<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getAllowVibration" parent="IHController">
+<documentation><![CDATA[<div class="description"> Return boolean of vibration setting preference<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getGPSTracking" parent="IHController">
+<documentation><![CDATA[<div class="description"> Return boolean of GPS setting preference<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getDarkModeSetting" parent="IHController">
+<documentation><![CDATA[<div class="description"> Return boolean of DarkMode setting preference<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="getBattTempSetting" parent="IHController">
+<documentation><![CDATA[<div class="description"> Return boolean of BattTemp setting preference<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="ProgressDelegate">
+<documentation><![CDATA[<div class="description"> Constructor<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="onBack" parent="ProgressDelegate">
+<documentation><![CDATA[<div class="description"> Block the back button handling while the progress bar is up.<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="StartConfirmationDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onResponse" parent="StartConfirmationDelegate">
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="EndWorkoutDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onMenuItem" parent="EndWorkoutDelegate">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="DiscardConfirmationDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onResponse" parent="DiscardConfirmationDelegate">
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="isDebugEnabled" parent="Log">
+<documentation><![CDATA[<div class="description"> Returns true if debug is enabled<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="debug" parent="Log">
+<param id="text"/>
+<documentation><![CDATA[<div class="description"> Writes a debug message on system console<br/></div>]]></documentation>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="start" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="stop" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="save" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="discard" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getCalories" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="isGPSOn" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInfoHeartRate" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getTemperature" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getPeakHR" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getPeakHRpct" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getHRbpm" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getMaxHRbpm" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getAvgHRbpm" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getTimeElapsed" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getSecondaryTimeElapsed" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="startSecondaryTimer" parent="IHModel">
+<param id="firstStart"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="resetSecondaryTimer" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getZoneTimes" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getIntesityMinutes" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setSensor" parent="IHModel">
+<param id="sensor_info"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setGPSTracking" parent="IHModel">
+<param id="option"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setStats" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getHRZoneColorIndex" parent="IHModel">
+<param id="fHeartRate"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="hrFieldsCallback" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="protected" name="setZones" parent="IHModel">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setActivity" parent="IHModel">
+<param id="type"/>
+<param id="subType"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onPosition" parent="IHModel">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+</functions>
+<dataEntryOffsetMappings>
+<dataEntry offset="95" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="294" parentId="globals" symbolId="IHWorkoutView" type="class"/>
+<dataEntry offset="685" parentId="globals" symbolId="GPSConfirmationDelegate" type="class"/>
+<dataEntry offset="748" parentId="globals" symbolId="DiscardConfirmationDelegate" type="class"/>
+<dataEntry offset="811" parentId="globals" symbolId="IHController" type="class"/>
+<dataEntry offset="1314" parentId="globals" symbolId="IHApp" type="class"/>
+<dataEntry offset="1393" parentId="globals" symbolId="IHMenuDelegate" type="class"/>
+<dataEntry offset="1464" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="1543" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="1598" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="1629" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="1716" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="1747" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="1778" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="1825" parentId="globals" symbolId="Log" type="module"/>
+<dataEntry offset="1880" parentId="globals" symbolId="StartConfirmationDelegate" type="class"/>
+<dataEntry offset="1943" parentId="globals" symbolId="IHWorkoutDelegate" type="class"/>
+<dataEntry offset="2046" parentId="globals" symbolId="EndWorkoutDelegate" type="class"/>
+<dataEntry offset="2109" parentId="globals" symbolId="ProgressDelegate" type="class"/>
+<dataEntry offset="2164" parentId="globals" symbolId="IHModel" type="class"/>
+</dataEntryOffsetMappings>
+</debugInfo>

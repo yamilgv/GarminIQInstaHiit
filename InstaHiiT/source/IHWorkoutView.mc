@@ -215,7 +215,7 @@ class IHWorkoutView extends Ui.View {
             var curZone = mModel.getHRZoneColorIndex(heartRate);
 	        dc.setColor(uiHRZoneColor[curZone], Graphics.COLOR_TRANSPARENT);
 	        dc.drawText(devXCenter, 60, mController.FONTXXLARGE, heartRate, Graphics.TEXT_JUSTIFY_CENTER); //Current HR
-	        var currHRRpct = mModel.getHRpct() + "";
+	        var currHRRpct = Math.round(( heartRate.toDouble() / maxHR.toDouble() ) * 100).toNumber() + "";
 	        dc.drawText(200, 80, mController.FONTLARGE, currHRRpct, Graphics.TEXT_JUSTIFY_CENTER); //Current HR Percent
 	        dc.setColor(uiColorsArray[3], Graphics.COLOR_TRANSPARENT);
 	        dc.drawText(200 + (dc.getTextWidthInPixels(currHRRpct, mController.FONTLARGE)/2) + 5, 80, mController.FONTXTINY, "%", Graphics.TEXT_JUSTIFY_CENTER); //Percentage Symbol
@@ -415,26 +415,33 @@ class IHWorkoutView extends Ui.View {
 		if (maxSecs < 900) { maxSecs = 900; }         	// 900sec = 15min
 		else if (maxSecs > 14355) { maxSecs = 14355; }  // 14400sec = 4hrs
 		var binWidthSecs = Math.floor(binPixels * maxSecs / totWidth).toNumber(); //Amount of time that average a bin	
-		var sample = Sensor.getHeartRateHistory( {:duration=>new Time.Duration(maxSecs),:order=>Sensor.ORDER_NEWEST_FIRST});
-		//System.println(sample.getMax() + " " + sample.getMin());
+		var maxSecsDuration = new Time.Duration(maxSecs); 
+		var sample = Sensor.getHeartRateHistory( {:duration=>maxSecsDuration,:order=>Sensor.ORDER_NEWEST_FIRST});  //Seems to always return all history
+		//System.println("Iterator:" +  sample.getMax() + " " + sample.getMin()); //Always return de whole history Max/min not of the Duration
+		//dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
+		//dc.drawText(devXCenter, 120, mController.FONTXTINY, "iMax: " + sample.getMax() + " iMin: " + sample.getMin(), Graphics.TEXT_JUSTIFY_CENTER); 
 								
 		//If no HR Iterator was found leave Graph space empty	
 		if (sample == null) {return;}
 		
-		//In the first run, get the maximun and minimu HRs available for the first 15 min
+		//In the first run, get the maximun and minimun HRs available for the first 15 min
 		if(timer == 0) {
+			var timeLimit = Time.now().value() - maxSecs; //Previous 15 min
+			var stopWhile = false; 
 			var fheart = sample.next();
-			var finished = false;
-				while (!finished){
-					if (fheart == null) { finished = true;}
-					else {
-						if(fheart.data != null) {
-							if (fheart.data > heartMax) { heartMax = fheart.data; }
-							if (fheart.data < heartMin) { heartMin = fheart.data; }
-						}
+			while (fheart!=null && !stopWhile) {
+				if(fheart.data != null) {
+					if(fheart.when.value() >= timeLimit){
+						if (fheart.data > heartMax) { heartMax = fheart.data; }
+						if (fheart.data < heartMin) { heartMin = fheart.data; }
+					} else {
+						stopWhile = true;
 					}
-					fheart = sample.next();
 				}
+			fheart = sample.next();
+			}
+			//dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
+			//dc.drawText(devXCenter, 140, mController.FONTXTINY, "Max: " + heartMax + " Min: " + heartMin, Graphics.TEXT_JUSTIFY_CENTER);
 			System.println("Max: " + heartMax + " Min: " + heartMin);
 			return;
 		}
