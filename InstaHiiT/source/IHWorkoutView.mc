@@ -33,6 +33,7 @@ class IHWorkoutView extends Ui.View {
     hidden var currCharge;
     hidden var isDarkModeOn;
 	hidden var showBattTempFields;
+	hidden var askActivity;
     
     //Graph Constants
     hidden var heartMin = 1000;
@@ -92,6 +93,9 @@ class IHWorkoutView extends Ui.View {
 		//Initialize Graph Position Constants
 		xValConst = (devWidth-totWidth)/2 + totWidth;
 		yVal = devHeight/2 + 8;
+		
+		//Make sure Ask Activity is called once is active
+		askActivity = mController.getAskActivity();
         
     }
 
@@ -104,19 +108,22 @@ class IHWorkoutView extends Ui.View {
     
         mTimer.start(method(:onTimer), 1000, true);
         
+        System.println("onShow Received State: "+mController.WorkoutUIState);
+        
         // If we come back to this view via back button from Resume option
         //if (!mController.isRunning()  && mController.resume == true) {
         if(mController.WorkoutUIState == mController.UISTATE_STOPPED){
         	//mController.resume = false; 
-            mController.onStartStop();
+            mController.resumeWorkout();
             
         }
         
         
-        //Get Seetings
+        //Get Settings only when OnShow is called
 		isDarkModeOn =  mController.getDarkModeSetting();
 		showBattTempFields =  mController.getBattTempSetting();
-        selectedActivityStr = mController.getActivityString(); //Get Activity String only when OnShow is called
+        selectedActivityStr = mController.getActivityString(); //Get Activity String 
+        
         maxHR = mModel.getMaxHRbpm();
         
         //Initialize UI Colors
@@ -156,6 +163,12 @@ class IHWorkoutView extends Ui.View {
 			if(showBattTempFields == true) {drawSlowUpdatingFields(dc, timer);}//Draw Batt and Temperature 	
 			plotHRgraph(dc,timer); 
 			return;
+		}
+		
+		//If Ask for Activity Setting at Init of App was selected
+		if(askActivity) {
+			Ui.pushView(IHMenuDelegate.getActMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
+			askActivity = false;
 		}
 
 		//Workout Running and End Screen Common Drawing
@@ -281,7 +294,7 @@ class IHWorkoutView extends Ui.View {
 		    dc.setColor(uiColorsArray[2], Graphics.COLOR_TRANSPARENT);
 			dc.drawText(devXCenter, 7, mController.FONTSMALL, getTimeString(), Graphics.TEXT_JUSTIFY_CENTER);
 	        dc.drawText(devXCenter, (devHeight / 4) -20, mController.FONTSMALL, (mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR?"Waiting for\nHeart Rate ...":(uiBlinkToggle?"Ready for\n"+selectedActivityStr+" Workout!":"Press\nStart button.")), Graphics.TEXT_JUSTIFY_CENTER);
-	       	dc.drawText(devXCenter, (devHeight / 3) + 70, mController.FONTXTINY, "Settings:\nLongpress on screen\nor press Menu.", Graphics.TEXT_JUSTIFY_CENTER);
+	       	//dc.drawText(devXCenter, (devHeight / 3) + 70, mController.FONTXTINY, "Settings:\nLongpress on screen\nor press Menu.", Graphics.TEXT_JUSTIFY_CENTER);
 	       	
 	       	//Draw Blinking Heart
 	       	if(uiBlinkToggle) {dc.drawBitmap(devXCenter/3, devYCenter, Ui.loadResource(Rez.Drawables.hr_red_24));}

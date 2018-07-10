@@ -42,6 +42,7 @@ class IHController
     const ALLOW_GPSTRACKING = "allowGPSTracking";
     const ALLOW_DARKMODE = "allowDarkMode"; 
     const ALLOW_BATTTEMP = "allowBATTTEMP";  
+    const ASK_ACTIVITY = "askActivity";
     
     const GPSCapable = 1;
     const GPSDisabled = 0;
@@ -100,37 +101,31 @@ class IHController
     }
 
     //! Start the Model
-    hidden function resumeWorkout() {
+    function resumeWorkout() {
         WorkoutUIState = UISTATE_RUNNING;
-        mModel.start();
+        //mModel.start();
         notifyShort();
     }
 
     //! Stop/Pause the Model
-    hidden function stopWorkout() {
+    function stopWorkout() {
     
         WorkoutUIState = UISTATE_STOPPED;
         
-        mModel.stop();
+        //mModel.stop();
         notifyShort();
         
-        var menu = new Ui.Menu();
-        menu.setTitle(getActivityString());
-	    menu.addItem("Resume", 	:resume);
-	    menu.addItem("Save", 	:save);
-	    menu.addItem("Discard", :discard);   
-	    
-        WatchUi.pushView(menu, new EndWorkoutDelegate(), WatchUi.SLIDE_UP);
     }
 
     //! Handle the start/stop button
+    /*
     function onStartStop() {
         if(WorkoutUIState == UISTATE_RUNNING) {
             stopWorkout();
         } else {
             resumeWorkout();
         }
-    }
+    }*/
 
     //! Confirmation of no HR
     function confirmStart() {
@@ -412,6 +407,11 @@ class IHController
         var value = getBooleanPref(ALLOW_VIBRATION, true);
         return value;
     }
+    
+    function getAskActivity(){
+        var value = getBooleanPref(ASK_ACTIVITY, true);
+        return value;
+    }
 
 	/*
     //! Return boolean of HR Stability setting preference
@@ -472,6 +472,7 @@ class StartConfirmationDelegate extends Ui.ConfirmationDelegate {
 
 }
 
+/*
 //! This delegate handles input for the Menu pushed when the user hits the stop button
 class EndWorkoutDelegate extends Ui.MenuInputDelegate {
 
@@ -515,3 +516,4 @@ class DiscardConfirmationDelegate extends Ui.ConfirmationDelegate {
     }
 
 }
+*/

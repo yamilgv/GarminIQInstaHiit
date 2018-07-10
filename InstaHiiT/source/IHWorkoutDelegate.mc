@@ -60,9 +60,13 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
         	}
         
          	if(mController.WorkoutUIState == mController.UISTATE_RUNNING){
-           		mController.onStartStop();}
+         		mController.stopWorkout();
+         		Ui.pushView(IHMenuDelegate.getRunningWorkoutMenu(), new IHMenuDelegate(), WatchUi.SLIDE_UP);
+           		//mController.onStartStop();
+           	}
             else {
-             	mController.confirmStart();    	
+             	//mController.confirmStart(); 
+             	Ui.pushView(IHMenuDelegate.getStartWorkoutMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);   	
              	} 
             return true;
         }
