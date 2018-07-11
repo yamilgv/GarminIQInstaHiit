@@ -25,7 +25,6 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
     
 		var menu = new Ui.Menu();
         //menu.setTitle("Settings:");
-        //menu.addItem("Activity Type\n" + selectedActivityStr, :ActivityType);
         menu.addItem("Vibration\n"+(allowVib?"[On] Off":"On [Off]"), :AllowVibration);
 		menu.addItem("Dark Mode\n"+(isDarkModeOn?"[On] Off":"On [Off]"),:DarkMode);
 		menu.addItem("Batt/Temp\n"+(showBattTempFields?"[On] Off":"On [Off]"),:BattTemp);
@@ -106,6 +105,7 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
     
         //Create Activities Menu
         if (item == :ActivityType) {
+        	Ui.popView(Ui.SLIDE_DOWN);
             Ui.pushView(getActMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
             return true;
         }
@@ -148,8 +148,6 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
             Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);
             return true;
         }
-        
-
         
         // Allow Vibration Sub Menu Options
         if (item == :VibrationOn) {
@@ -209,8 +207,6 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
 	            //Prefs.setActivitySubType(actMenuIDArray[1]);
 	            App.getApp().setProperty(mController.ACTIVITY_SUB_TYPE, actMenuIDArray[1]);
 	            
-	            Ui.requestUpdate();
-	            
 	            if(actMenuIDArray[3] ==  mController.GPSCapable){ //If GPS Capable Activity, confirm torning ON GPS
 	            	//Ui.popView(Ui.SLIDE_DOWN);
 	            	Ui.pushView(new Ui.Confirmation("Enable\nGPS tracking?"), new GPSConfirmationDelegate(), Ui.SLIDE_UP );
@@ -224,7 +220,6 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
         	}
 		}
 		
-
         return false;
     }
 

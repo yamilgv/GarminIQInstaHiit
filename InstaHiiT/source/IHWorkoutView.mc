@@ -34,6 +34,7 @@ class IHWorkoutView extends Ui.View {
     hidden var isDarkModeOn;
 	hidden var showBattTempFields;
 	hidden var askActivity;
+	
     
     //Graph Constants
     hidden var heartMin = 1000;
@@ -55,6 +56,8 @@ class IHWorkoutView extends Ui.View {
 	hidden var devHeight; //Device Height
 	hidden var devXCenter; //Device X Center
 	hidden var devYCenter; //Device Y Center
+	
+	var hrZoneModeChanged = false;
 
     function initialize() {
         View.initialize();
@@ -182,7 +185,6 @@ class IHWorkoutView extends Ui.View {
 			dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
 			dc.fillRectangle(0, 32, devWidth, 92); 
 
-			//drawCenterFields(dc);
 			drawTimers(dc, timer);
 
 			//Draw Labels
@@ -241,7 +243,7 @@ class IHWorkoutView extends Ui.View {
 			//System.println("Max: " + heartMax + " Min: " + heartMin);
 	        
 	        //Draw only when coming from OnShow or Every 10 Seconds if showing Minutes in HRZones 
-        	if(mController.forceOnUpdate || (((timer) % 10) == 0 && mController.hrZoneMode == 2)) { drawZonesLegend(dc); }
+        	if(mController.forceOnUpdate || hrZoneModeChanged || (((timer) % 10) == 0 && mController.hrZoneMode == 2)) { drawZonesLegend(dc); }
 
         	mController.forceOnUpdate = false;
 	        
@@ -286,23 +288,44 @@ class IHWorkoutView extends Ui.View {
 				if( (Attention has :vibrate) && (System.getDeviceSettings().vibrateOn) && (mController.getAllowVibration() == true)){ Attention.vibrate([new Attention.VibeProfile(100, 250)]);}
 			} 
 			
-			//Clean Screen
-	        dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
-			dc.fillRectangle(0, 0, devWidth, devHeight);
+			//Clean Top Header Area
+			dc.setColor(uiColorsArray[1], Gfx.COLOR_TRANSPARENT);
+			dc.fillRectangle(0, 0, devWidth, 32); 
+			
+			//Draw Time and GPS if needed
+	    	dc.setColor(uiColorsArray[4], Graphics.COLOR_TRANSPARENT);
+			dc.drawText(devXCenter, 1, mController.FONTSMALL, getTimeString(), Graphics.TEXT_JUSTIFY_CENTER); 
+			if(mModel.isGPSOn() == true) {dc.drawText(70, 12, mController.FONTXXXTINY, "GPS", Graphics.TEXT_JUSTIFY_CENTER);} //Draw GPS string if enabled
+			
+			//Clear HR Fields Area
+			dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
+			dc.fillRectangle(0, 32, devWidth, 92); 
+			
+			//Clear and Draw Legends Zone
+			drawZonesLegend(dc);
+
+			//Clean and Draw Timers Area
+			drawTimers(dc, timer);
+			
+			//Draw Batt and Temperature
+			if(showBattTempFields == true) {drawSlowUpdatingFields(dc, timer);}	
+			
+			//Clean Graph Background
+			dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
+			dc.fillRectangle(0, 124, devWidth, 50); 
 		    
 		    //Draw Instructions
 		    dc.setColor(uiColorsArray[2], Graphics.COLOR_TRANSPARENT);
-			dc.drawText(devXCenter, 7, mController.FONTSMALL, getTimeString(), Graphics.TEXT_JUSTIFY_CENTER);
-	        dc.drawText(devXCenter, (devHeight / 4) -20, mController.FONTSMALL, (mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR?"Waiting for\nHeart Rate ...":(uiBlinkToggle?"Ready for\n"+selectedActivityStr+" Workout!":"Press\nStart button.")), Graphics.TEXT_JUSTIFY_CENTER);
+			dc.drawText(devXCenter,  35, mController.FONTSMALL, selectedActivityStr, Graphics.TEXT_JUSTIFY_CENTER);
+	        dc.drawText(devXCenter, 130, mController.FONTSMALL, (mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR?(uiBlinkToggle?"Waiting for":"Heart Rate."):(uiBlinkToggle?"Ready for Workout!":"Press Start button.")), Graphics.TEXT_JUSTIFY_CENTER);
 	       	//dc.drawText(devXCenter, (devHeight / 3) + 70, mController.FONTXTINY, "Settings:\nLongpress on screen\nor press Menu.", Graphics.TEXT_JUSTIFY_CENTER);
 	       	
 	       	//Draw Blinking Heart
-	       	if(uiBlinkToggle) {dc.drawBitmap(devXCenter/3, devYCenter, Ui.loadResource(Rez.Drawables.hr_red_24));}
+	       	if(uiBlinkToggle) {dc.drawBitmap(35, 90, Ui.loadResource(Rez.Drawables.hr_red_24));}
 	       	
 	       	//Draw Current HR
 	       	dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(heartRate)], Graphics.COLOR_TRANSPARENT);
-	       	dc.drawText(devXCenter, devYCenter-13, mController.FONTLARGE, (mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR?"--":heartRate), Graphics.TEXT_JUSTIFY_CENTER);
-
+	        dc.drawText(devXCenter, 60, mController.FONTXXLARGE, (mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR?"0":heartRate), Graphics.TEXT_JUSTIFY_CENTER); //Current HR
 	        return; 
         }
 				
@@ -378,6 +401,8 @@ class IHWorkoutView extends Ui.View {
 		dc.drawText(devXCenter, 170, mController.FONTXXTINY, hrZoneArray[2], Graphics.TEXT_JUSTIFY_CENTER); //Zone3 Text
 		dc.drawText(161, 170, mController.FONTXXTINY, 		hrZoneArray[1], Graphics.TEXT_JUSTIFY_CENTER); //Zone2 Text
 		dc.drawText(201, 170, mController.FONTXXTINY, 		hrZoneArray[0], Graphics.TEXT_JUSTIFY_CENTER); //Zone1 Text
+		
+		hrZoneModeChanged = false;
     }
     
     //! Handler for the timer callback

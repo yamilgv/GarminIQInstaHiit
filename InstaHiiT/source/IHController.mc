@@ -89,9 +89,8 @@ class IHController
     //! If it was not previously started confirm the presense of a HR
     function startWorkout() {
         //mRunning = true;
-        WorkoutUIState = UISTATE_RUNNING;
+       WorkoutUIState = UISTATE_RUNNING;
         
-
         //var delegate = new IHWorkoutDelegate();
         //var view = new IHWorkoutView();
         //Ui.switchToView(view, delegate, Ui.SLIDE_LEFT);
@@ -103,7 +102,7 @@ class IHController
     //! Start the Model
     function resumeWorkout() {
         WorkoutUIState = UISTATE_RUNNING;
-        //mModel.start();
+        mModel.start();
         notifyShort();
     }
 
@@ -112,7 +111,7 @@ class IHController
     
         WorkoutUIState = UISTATE_STOPPED;
         
-        //mModel.stop();
+        mModel.stop();
         notifyShort();
         
     }
@@ -137,12 +136,12 @@ class IHController
         if ((heartrate == 0 || heartrate == null) && WorkoutUIState == UISTATE_WAITINGFORHR) {
             var dialog = new Ui.Confirmation("No HR Detected, Start Anyway?");
             var delegate = new StartConfirmationDelegate();
-
+			Ui.popView(Ui.SLIDE_DOWN);
             // Open the HR confirmation dialog
             Ui.pushView(dialog, delegate, Ui.SLIDE_UP );
         } else {
             //confirmed = true;
-            WorkoutUIState = UISTATE_READYTOSTART;
+            //WorkoutUIState = UISTATE_READYTOSTART;
             startWorkout();
         }
     }
@@ -462,11 +461,11 @@ class StartConfirmationDelegate extends Ui.ConfirmationDelegate {
         ConfirmationDelegate.initialize();
         // Get the controller from the application class
         mController = Application.getApp().controller;
-    }
-
+    } 
+    
     function onResponse(value) {
         if (value == Ui.CONFIRM_YES) {
-            mController.WorkoutUIState = mController.UISTATE_READYTOSTART;
+        	mController.startWorkout();
         } 
     }
 
