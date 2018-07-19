@@ -1,6 +1,7 @@
 //! Delegates inputs to the controller
 
 using Toybox.WatchUi as Ui;
+using Toybox.System as System;
 
 class IHWorkoutDelegate extends Ui.BehaviorDelegate {
 
@@ -17,9 +18,17 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
     //! Back button pressed
     function onBack() {
         
+        if(mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR){
+        	mController.WorkoutUIState = mController.UISTATE_WAITINGTOSTART;
+            Ui.pushView(IHMenuDelegate.getStartWorkoutMenu(), new IHMenuDelegate(), Ui.SLIDE_UP); 
+        	return true;
+        }
+        
         // Exit App on back press if Workout not running
-        if(mController.WorkoutUIState != mController.UISTATE_RUNNING){
-        	mController.onExit();}
+        if(mController.WorkoutUIState == mController.UISTATE_WORKOUTEND){
+        	mController.onExit();
+        	return true;
+        }
         	
         return true;
     }
@@ -38,11 +47,11 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
         }
         
         //Show Settings by Menu button on Confirmed State
-        if(mController.WorkoutUIState == mController.UISTATE_READYTOSTART || mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR) { 
+        //if(mController.WorkoutUIState == mController.UISTATE_READYTOSTART || mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR) { 
+        //	Ui.pushView(IHMenuDelegate.getIHMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
+        //	return true;
+        //}
         
-        	Ui.pushView(IHMenuDelegate.getIHMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
-        	return true;
-        }
         return true;
     }
 
@@ -54,20 +63,29 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
     	 
         if (key.getKey() == Ui.KEY_ENTER) {
         
+        	if(mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR){
+        		mController.WorkoutUIState = mController.UISTATE_WAITINGTOSTART;
+             	Ui.pushView(IHMenuDelegate.getStartWorkoutMenu(), new IHMenuDelegate(), Ui.SLIDE_UP); 
+             	return true;  	
+             }  
+           	
+            /*if(mController.WorkoutUIState == mController.UISTATE_EXITONBACK){
+             	Ui.popView(Ui.SLIDE_DOWN);
+             	System.exit(); 
+             	return true; 	
+             }*/ 
+             
+            if(mController.WorkoutUIState == mController.UISTATE_RUNNING){
+         		mController.stopWorkout();
+         		Ui.pushView(IHMenuDelegate.getRunningWorkoutMenu(), new IHMenuDelegate(), WatchUi.SLIDE_UP);
+         		return true;
+           	}
+
         	if(mController.WorkoutUIState == mController.UISTATE_WORKOUTEND){
 	        	mController.onExit();
 	        	return true;
-        	}
-        
-         	if(mController.WorkoutUIState == mController.UISTATE_RUNNING){
-         		mController.stopWorkout();
-         		Ui.pushView(IHMenuDelegate.getRunningWorkoutMenu(), new IHMenuDelegate(), WatchUi.SLIDE_UP);
-           		//mController.onStartStop();
-           	}
-            else {
-             	//mController.confirmStart(); 
-             	Ui.pushView(IHMenuDelegate.getStartWorkoutMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);   	
-             	} 
+        	}           
+	
             return true;
         }
         

@@ -5,7 +5,7 @@ using Toybox.Graphics as Gfx;
 using Toybox.System as Sys;
 using Toybox.Application;
 using Toybox.Lang;
-using Toybox.System;
+using Toybox.System as System;
 using Toybox.Timer;
 using Toybox.Time;
 using Toybox.UserProfile;
@@ -20,7 +20,6 @@ class IHWorkoutView extends Ui.View {
 
     //! UI Variables
     hidden var uiBlinkToggle = true; //Toggle between true/false on timer to make blinking effect
-
     hidden var uiHRZoneColor;
     hidden var uiHRZoneValue;
     hidden var uiColorsArray;
@@ -32,22 +31,17 @@ class IHWorkoutView extends Ui.View {
     hidden var currTemperature;
     hidden var currCharge;
     hidden var isDarkModeOn;
-	hidden var showBattTempFields;
-	hidden var askActivity;
-	
+	hidden var showBattTempFields;	
     
     //Graph Constants
     hidden var heartMin = 1000;
 	hidden var heartMax = 0;
-	//hidden var graphLength = 15; //minutes
 	hidden var maxSecs; // = graphLength * 60;
 	hidden var tickInterval = 15; //In Minutes
-	//hidden var tickInterval2 = 30; //In Minutes
 	hidden var totHeight = 45; //Graph Height
 	hidden var totWidth = 210; //Graph Width
 	hidden var binPixels = 1; //Bin (Column) Width
 	hidden var totBins = Math.ceil(totWidth / binPixels).toNumber(); //Count of Bins or Columns
-	//hidden var binWidthSecs = Math.floor(binPixels * maxSecs / totWidth).toNumber(); //Amount of time that average a bin	
 	hidden var xValConst;
 	hidden var yVal;
 	
@@ -61,17 +55,20 @@ class IHWorkoutView extends Ui.View {
 
     function initialize() {
         View.initialize();
+        
         // Start timer used to push UI updates
         mTimer = new Timer.Timer();
+        
         // Get the model and controller from the Application
         mModel = Application.getApp().model;
         mController = Application.getApp().controller;
         
         //Convert tickIntervals to seconds
         tickInterval = tickInterval * 60; 
-		//tickInterval2 = tickInterval2 * 60; 
 
-		uiHRZoneValue = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC); //Get Default HR Zones from user profiles
+		//Get Default HR Zones from user profiles
+		uiHRZoneValue = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC); 
+		
         prevZone = 0;
         vibeTime = 0;
         currTemperature = 0;
@@ -96,9 +93,6 @@ class IHWorkoutView extends Ui.View {
 		//Initialize Graph Position Constants
 		xValConst = (devWidth-totWidth)/2 + totWidth;
 		yVal = devHeight/2 + 8;
-		
-		//Make sure Ask Activity is called once is active
-		askActivity = mController.getAskActivity();
         
     }
 
@@ -109,18 +103,32 @@ class IHWorkoutView extends Ui.View {
     
     System.println("onShow");
     
-        mTimer.start(method(:onTimer), 1000, true);
-        
         System.println("onShow Received State: "+mController.WorkoutUIState);
+        
+       	//If Start has not been pressed
+		if(mController.WorkoutUIState == mController.UISTATE_WAITINGTOSTART) {
+		    //System.println("UISTATE_WAITINGTOSTART");
+		    //mController.WorkoutUIState = mController.UISTATE_EXITONBACK;
+			Ui.pushView(IHMenuDelegate.getStartWorkoutMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
+			return;
+		}
+		
+		//If Back was pressed on the Main Start Menu, Exit the app
+		/*if(mController.WorkoutUIState == mController.UISTATE_EXITONBACK) {
+			//Ui.popView(Ui.SLIDE_DOWN);
+			System.println("System Exit:");
+			System.exit();
+			System.exit();
+			return;
+		}*/
+		
+		mTimer.start(method(:onTimer), 1000, true);
         
         // If we come back to this view via back button from Resume option
         //if (!mController.isRunning()  && mController.resume == true) {
         if(mController.WorkoutUIState == mController.UISTATE_STOPPED){
-        	//mController.resume = false; 
             mController.resumeWorkout();
-            
         }
-        
         
         //Get Settings only when OnShow is called
 		isDarkModeOn =  mController.getDarkModeSetting();
@@ -159,19 +167,20 @@ class IHWorkoutView extends Ui.View {
     
 		var timer = mModel.getTimeElapsed(); //Seconds
 		
+
+		
+		//If Start has not been pressed, do nothing
+		if(mController.WorkoutUIState == mController.UISTATE_WAITINGTOSTART) {
+			return;
+		}
+		
 		// Plot heart rate graph every 60 seconds, at the 10 seconds of the minute
-		//Do not update anything else but timers to smooth UI update and reduce glitches
+		//Do not update anything else but timers to smooth UI update and reduce drawing glitches
 		if(mController.WorkoutUIState == mController.UISTATE_RUNNING && ((timer-10) % 60) == 0) {
 			drawTimers(dc, timer);
 			if(showBattTempFields == true) {drawSlowUpdatingFields(dc, timer);}//Draw Batt and Temperature 	
 			plotHRgraph(dc,timer); 
 			return;
-		}
-		
-		//If Ask for Activity Setting at Init of App was selected
-		if(askActivity) {
-			Ui.pushView(IHMenuDelegate.getActMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
-			askActivity = false;
 		}
 
 		//Workout Running and End Screen Common Drawing
@@ -259,6 +268,7 @@ class IHWorkoutView extends Ui.View {
 			//Draw Avg Label and Value
 			dc.setColor(uiColorsArray[3], Graphics.COLOR_TRANSPARENT);	
 	    	dc.drawText(195, 73, mController.FONTXTINY, "Avg", Graphics.TEXT_JUSTIFY_CENTER); //Draw Avg String
+	    	dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(mModel.getAvgHRbpm())], Graphics.COLOR_TRANSPARENT);	
 	        dc.drawText(195, 90, mController.FONTSMALL, mModel.getAvgHRbpm(), Graphics.TEXT_JUSTIFY_CENTER);
 	    	
 	    	//Draw Saved! Top
@@ -278,14 +288,15 @@ class IHWorkoutView extends Ui.View {
 		}
 
 		//Waiting for Heart Rate Screen
-		if(mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR || mController.WorkoutUIState == mController.UISTATE_READYTOSTART) {
+		if(mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR) {
 			
 			var heartRate = mModel.getHRbpm();
 		
 			if (heartRate != 0 && mController.WorkoutUIState == mController.UISTATE_WAITINGFORHR) {
-				mController.WorkoutUIState = mController.UISTATE_READYTOSTART;
+				mController.startWorkout();
 				//Vibrate briefly to alert the user we got HR and we are ready to start workout
 				if( (Attention has :vibrate) && (System.getDeviceSettings().vibrateOn) && (mController.getAllowVibration() == true)){ Attention.vibrate([new Attention.VibeProfile(100, 250)]);}
+				return;
 			} 
 			
 			//Clean Top Header Area
@@ -480,7 +491,7 @@ class IHWorkoutView extends Ui.View {
 			}
 			//dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
 			//dc.drawText(devXCenter, 140, mController.FONTXTINY, "Max: " + heartMax + " Min: " + heartMin, Graphics.TEXT_JUSTIFY_CENTER);
-			System.println("Max: " + heartMax + " Min: " + heartMin);
+			//System.println("Max: " + heartMax + " Min: " + heartMin);
 			return;
 		}
 	  	
@@ -508,28 +519,20 @@ class IHWorkoutView extends Ui.View {
 		var prevHeight = 0;
 		var height = 0;
 		var xVal = 0;
-		
-		//Draw a shadow representing HR measurements out of the workout timeframe	
-		/*var xIndicator = (xValConst + (totBins * ((mModel.getTimeElapsed()*1.00)/maxSecs))*binPixels);
-		dc.setColor(Gfx.COLOR_LT_GRAY, Gfx.COLOR_TRANSPARENT);
-		for (var i = yVal; i < yVal+totHeight; i=i+2) {
-			dc.drawLine(xIndicator, i, (xValConst+totBins), i);
-		}
-		for (var i = xIndicator; i < (xValConst+totBins); i=i+2) {
-			dc.drawLine(i, yVal, i, yVal+totHeight);
-		}*/
+		var dasherCnt = 0;  //used to dash the line of the first minutes not within the workout
 		
 		//Draw an static arrow at top of graph representing current and end workout time	
 		var xIndicator = xValConst; // + (totBins * ((mModel.getTimeElapsed()*1.00)/maxSecs))*binPixels);
 		dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
 		dc.fillPolygon([[xIndicator-5, (yVal-4)],[xIndicator, (yVal+1)], [xIndicator+5, (yVal-4)]]);
 		
-		//Draw arrow at top of graph representing when the workout started	
+		//Calculate dynamic x used to draw dashed lines of out of workout time at the beginning 	
 		xIndicator = xValConst - (totBins * ((timer*1.00)/maxSecs)*binPixels);
-		//System.println("timer "+timer+" xIndicator "+xIndicator+" xValConst "+xValConst);
 		if(xIndicator<xValConst-totWidth){xIndicator = xValConst-totWidth;}
-		dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_TRANSPARENT);
-		dc.fillPolygon([[xIndicator-5, (yVal-4)],[xIndicator, (yVal+1)], [xIndicator+5, (yVal-4)]]);
+		
+		//Draw arrow at top of graph representing when the workout started
+		//dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_TRANSPARENT);
+		//dc.fillPolygon([[xIndicator-5, (yVal-4)],[xIndicator, (yVal+1)], [xIndicator+5, (yVal-4)]]);
 	
 		for (var i = 0; i < totBins; ++i) {
 		
@@ -597,10 +600,22 @@ class IHWorkoutView extends Ui.View {
 							//height = ((tempHeartBin-curHeartMin*0.9) / (curHeartMax-curHeartMin*0.9) * totHeight).toNumber();
 							height = ((tempHeartBin-curHeartMin*0.9) / (curHeartMax-curHeartMin*0.9) * totHeight).toNumber();
 							if(prevHeight != height){ //Avoid drawing the same dot again
-								dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(tempHeartBin)], Gfx.COLOR_TRANSPARENT);
-								//dc.setColor(uiHRZoneColor[getHRTestColour(tempHeartBin)], Gfx.COLOR_TRANSPARENT); 
-								dc.drawRectangle(xVal, yVal + totHeight - height, 2, 2);
-								//dc.fillCircle(xVal, yVal + totHeight - height, 1);
+								//System.println(i + " xVal:   " + xVal + " xIndicator: " + xIndicator + " dasherCnt: "+dasherCnt);
+								//Draw Dash Line for the first minutes of the graph not within the workout time
+								if(xVal < xIndicator){
+									if(dasherCnt < 3) {
+										dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(tempHeartBin)], Gfx.COLOR_TRANSPARENT);
+										dc.drawRectangle(xVal, yVal + totHeight - height, 2, 2);
+										System.println(i + " DotDrwan dasherCnt: "+dasherCnt);
+									}
+									dasherCnt= dasherCnt>5?0:dasherCnt+1;
+									
+								} else {
+									dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(tempHeartBin)], Gfx.COLOR_TRANSPARENT);
+									//dc.setColor(uiHRZoneColor[getHRTestColour(tempHeartBin)], Gfx.COLOR_TRANSPARENT); 
+									dc.drawRectangle(xVal, yVal + totHeight - height, 2, 2);
+									//dc.fillCircle(xVal, yVal + totHeight - height, 1);
+								}
 							}
 							tempHeartBin++;
 							prevHeight = height;
@@ -620,6 +635,12 @@ class IHWorkoutView extends Ui.View {
 			} // if !finished
 
 		} // loop over all bins
+		
+		//Draw a shadow representing HR measurements out of the workout timeframe	
+		//xIndicator = xValConst - (totBins * ((timer*1.00)/maxSecs)*binPixels);
+		//dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
+		//for (var i = xValConst-totBins; i < xIndicator; i=i+4) { dc.drawLine(i, yVal, i, yVal+totHeight);} //Vertical Lines
+		/*for (var i = yVal; i < yVal+totHeight; i=i+2) {dc.drawLine(xIndicator, i, (xValConst+totBins), i);}*/ //Horizontal Lines
 		
 		//Draw a short tick on the line representing the desired time interval
 		var xTickIndicator; 

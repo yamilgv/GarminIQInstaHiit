@@ -21,14 +21,14 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
 		var showBattTempFields =  mController.getBattTempSetting();
         //var selectedActivityStr = mController.getActivityString(); 
         var allowVib = mController.getAllowVibration(); 
-        var askActivity = mController.getAskActivity(); 
+        //var askActivity = mController.getAskActivity(); 
     
 		var menu = new Ui.Menu();
-        //menu.setTitle("Settings:");
+        menu.setTitle("InstaHiiT\nMore...");
         menu.addItem("Vibration\n"+(allowVib?"[On] Off":"On [Off]"), :AllowVibration);
 		menu.addItem("Dark Mode\n"+(isDarkModeOn?"[On] Off":"On [Off]"),:DarkMode);
 		menu.addItem("Batt/Temp\n"+(showBattTempFields?"[On] Off":"On [Off]"),:BattTemp);
-		menu.addItem("Default Activity\n"+(askActivity?"Always Ask":"Use Last One"),:AskActivity);
+		//menu.addItem("Default Activity\n"+(askActivity?"Always Ask":"Use Last One"),:AskActivity);
 		
 		return menu;
     
@@ -36,7 +36,7 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
     
     function getActMenu(){
     	var actMenu = new Ui.Menu();
-		actMenu.setTitle("Activities");
+		actMenu.setTitle("InstaHiit\nActivities");
 		for(var i =0; i< mController.mActivities.size(); ++i){
 			var actMenuIDArray = mController.mActivities[i];
 			actMenu.addItem(mController.mActivitiesStr[i], actMenuIDArray[2]);
@@ -44,7 +44,8 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
 		return actMenu;
     }
     
-    function getStartWorkoutMenu() {
+    /*
+	function getWaitingForHRMenu() {
     	
     	var selectedActivityStr = mController.getActivityString(); 
     	
@@ -54,6 +55,21 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
         menu.addItem("Change Activity", :ActivityType);
 		menu.addItem("More...",:More);
 		
+		
+		return menu;
+    }*/
+    
+    function getStartWorkoutMenu() {
+    	
+    	var selectedActivityStr = mController.getActivityString(); 
+    	
+    	var menu = new Ui.Menu();
+        menu.setTitle("InstaHiiT\n"+selectedActivityStr);
+        menu.addItem("Start",:Start);
+        menu.addItem("Change Activity", :ActivityType);
+		menu.addItem("More...",:More);
+		menu.addItem("Exit!",:Exit);
+		
 		return menu;
     }
     
@@ -62,13 +78,19 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
     	var selectedActivityStr = mController.getActivityString(); 
     	
     	var menu = new Ui.Menu();
-        menu.setTitle(selectedActivityStr);
+        menu.setTitle("InstaHiiT\n"+selectedActivityStr);
 	    menu.addItem("Resume", 	:resume);
 	    menu.addItem("Save", 	:save);
 	    menu.addItem("Discard", :discard);   
 		menu.addItem("More...",:More);
 		
 		return menu;
+    }
+    
+    function refreshMoreMenu(){
+    	//Ui.popView(Ui.SLIDE_DOWN);
+    	Ui.popView(Ui.SLIDE_DOWN);
+    	Ui.pushView(getMoreMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
     }
 
     function onMenuItem(item) {
@@ -87,7 +109,7 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
 
         //Save Workout            
         if (item == :save) {
-            mController.save();
+            Ui.pushView(new Ui.Confirmation("Save and End\nWorkout?"), new SaveConfirmationDelegate(), Ui.SLIDE_UP );
         	return true;
         }
             
@@ -102,90 +124,112 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
             Ui.pushView(getMoreMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
             return true;
         }
+        
+        //Exit Action
+        if(item == :Exit){
+        	mController.onExit();
+        }
     
         //Create Activities Menu
         if (item == :ActivityType) {
-        	Ui.popView(Ui.SLIDE_DOWN);
+        	//Ui.popView(Ui.SLIDE_DOWN);
             Ui.pushView(getActMenu(), new IHMenuDelegate(), Ui.SLIDE_UP);
             return true;
         }
         
         //Create Vibration Menu
         if (item == :AllowVibration) {
-        
+
+        	var allowVib = mController.getAllowVibration();
+            App.getApp().setProperty(mController.ALLOW_VIBRATION, !allowVib); 
+            refreshMoreMenu();
+            /*
 	       	var menu = new Ui.Menu();
 	        menu.addItem("Vibration On", :VibrationOn);
 	        menu.addItem("Vibration Off", :VibrationOff);
-            Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);
+            Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);*/
             return true;
         }
         
         //Create Dark Mode Menu
         if (item == :DarkMode) {
         
-	       	var menu = new Ui.Menu();
+        	        
+            var isDarkModeOn =  mController.getDarkModeSetting();
+            App.getApp().setProperty(mController.ALLOW_DARKMODE, !isDarkModeOn); 
+        	refreshMoreMenu();
+        	
+	       	/*var menu = new Ui.Menu();
 	        menu.addItem("Dark Mode On", 	:DarkModeOn);
 	        menu.addItem("Dark Mode Off", 	:DarkModeOff);
-            Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);
+            Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);*/
             return true;
         }
         
         //Create Batt/Temp Menu
         if (item == :BattTemp) {
         
-	       	var menu = new Ui.Menu();
+        	var showBattTempFields =  mController.getBattTempSetting();
+        	App.getApp().setProperty(mController.ALLOW_BATTTEMP, !showBattTempFields); 
+        	refreshMoreMenu();
+	       	/*var menu = new Ui.Menu();
 	        menu.addItem("Batt/Temp On", 	:BattTempOn);
 	        menu.addItem("Batt/Temp Off", 	:BattTempOff);
-            Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);
+            Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);*/
             return true;
         }
         
         //Create AskActivity Menu
+        /*
         if (item == :AskActivity) {
 	       	var menu = new Ui.Menu();
 	        menu.addItem("Always Ask", 	:AskActivityOn);
 	        menu.addItem("Use Last One", :AskActivityOff);
             Ui.pushView(menu, new IHMenuDelegate(), Ui.SLIDE_UP);
             return true;
-        }
+        }*/
         
         // Allow Vibration Sub Menu Options
+        /*
         if (item == :VibrationOn) {
             App.getApp().setProperty(mController.ALLOW_VIBRATION, true); 
-            Ui.popView(Ui.SLIDE_DOWN);
+            refreshMoreMenu();
             return true;
         }
         if (item == :VibrationOff) {
             App.getApp().setProperty(mController.ALLOW_VIBRATION, false);
-            Ui.popView(Ui.SLIDE_DOWN);
+            refreshMoreMenu();
             return true;
-        }
+        }*/
         
         // Allow DarkMode Sub Menu Options
+        /*
         if (item == :DarkModeOn) {
             App.getApp().setProperty(mController.ALLOW_DARKMODE, true); 
-            Ui.popView(Ui.SLIDE_DOWN);
+            refreshMoreMenu();
             return true;
         }
         if (item == :DarkModeOff) {
             App.getApp().setProperty(mController.ALLOW_DARKMODE, false);
-            Ui.popView(Ui.SLIDE_DOWN);
+            refreshMoreMenu();
             return true;
-        }
+        }*/
         
         // Allow Batt/Temp Sub Menu Options
+        /*
         if (item == :BattTempOn) {
             App.getApp().setProperty(mController.ALLOW_BATTTEMP, true); 
-            Ui.popView(Ui.SLIDE_DOWN);
+            refreshMoreMenu();
             return true;
         }
         if (item == :BattTempOff) {
             App.getApp().setProperty(mController.ALLOW_BATTTEMP, false);
-            Ui.popView(Ui.SLIDE_DOWN);
+            refreshMoreMenu();
             return true;
-        }
+        }*/
 
 		//Ask for Activity at Launck Options
+		/*
         if (item == :AskActivityOn) {
             App.getApp().setProperty(mController.ASK_ACTIVITY, true); 
             Ui.popView(Ui.SLIDE_DOWN);
@@ -195,28 +239,28 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
             App.getApp().setProperty(mController.ASK_ACTIVITY, false);
             Ui.popView(Ui.SLIDE_DOWN);
             return true;
-        }
+        }*/
         
-
 		//Activities Sub Menu Options
 		for(var i =0; i< mController.mActivities.size(); ++i){
 			var actMenuIDArray = mController.mActivities[i];
 			if (item == actMenuIDArray[2]) {
-	            //Prefs.setActivityType(actMenuIDArray[0]);
+			
 	            App.getApp().setProperty(mController.ACTIVITY_TYPE, actMenuIDArray[0]);
-	            //Prefs.setActivitySubType(actMenuIDArray[1]);
 	            App.getApp().setProperty(mController.ACTIVITY_SUB_TYPE, actMenuIDArray[1]);
+	            //Make sure we can refresh Start Main Menu, after the Activity is changed
+	            mController.WorkoutUIState = mController.UISTATE_WAITINGTOSTART; 
+	            Ui.popView(Ui.SLIDE_DOWN);
 	            
 	            if(actMenuIDArray[3] ==  mController.GPSCapable){ //If GPS Capable Activity, confirm torning ON GPS
-	            	//Ui.popView(Ui.SLIDE_DOWN);
 	            	Ui.pushView(new Ui.Confirmation("Enable\nGPS tracking?"), new GPSConfirmationDelegate(), Ui.SLIDE_UP );
 	            	return true;
 	            } else {  //GPS is not an option
 	            	App.getApp().setProperty(mController.ALLOW_GPSTRACKING, false);
-	            	//Ui.popView(Ui.SLIDE_DOWN);
 	            	return true;
 	            }
 	            
+	            return true;
         	}
 		}
 		
@@ -260,6 +304,24 @@ class DiscardConfirmationDelegate extends Ui.ConfirmationDelegate {
     function onResponse(value) {
         if (value == Ui.CONFIRM_YES) {
             mController.discard();
+        } 
+    }
+
+}
+
+class SaveConfirmationDelegate extends Ui.ConfirmationDelegate {
+
+    hidden var mController;
+
+    function initialize() {
+        ConfirmationDelegate.initialize();
+        // Get the controller from the application class
+        mController = Application.getApp().controller;
+    }
+
+    function onResponse(value) {
+        if (value == Ui.CONFIRM_YES) {
+             mController.save();
         } 
     }
 

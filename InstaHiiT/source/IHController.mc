@@ -28,8 +28,8 @@ class IHController
     var FONTXXLARGE = Ui.loadResource( Rez.Fonts.RobotoBlack76 ); //Main HR
     
     //Workout View States
-    enum {UISTATE_WAITINGFORHR, UISTATE_READYTOSTART, UISTATE_RUNNING, UISTATE_STOPPED, UISTATE_WORKOUTEND}
-    var WorkoutUIState = UISTATE_WAITINGFORHR;
+    enum {UISTATE_EXITONBACK, UISTATE_WAITINGTOSTART, UISTATE_WAITINGFORHR, UISTATE_RUNNING, UISTATE_STOPPED, UISTATE_WORKOUTEND}
+    var WorkoutUIState = UISTATE_WAITINGTOSTART;
     
     var hrZoneMode = 1; //Controls if showing HR Zone Values or HR Zone Workout Minutes by SwipeUp/SwipeDown or KeyUp/KeyDown
     var forceOnUpdate = false; //If an event like PopUpMenus, Swipe or Key press was detected, refresh screen
@@ -42,7 +42,7 @@ class IHController
     const ALLOW_GPSTRACKING = "allowGPSTracking";
     const ALLOW_DARKMODE = "allowDarkMode"; 
     const ALLOW_BATTTEMP = "allowBATTTEMP";  
-    const ASK_ACTIVITY = "askActivity";
+    //const ASK_ACTIVITY = "askActivity";
     
     const GPSCapable = 1;
     const GPSDisabled = 0;
@@ -129,16 +129,17 @@ class IHController
     //! Confirmation of no HR
     function confirmStart() {
         // grab current heart rate
+        
+        //Start was pressed
+       
         var heartrate = mModel.getHRbpm();
-
         // If there is no heart rate detected and the prompt has not previously been confirmed
         // confirm if the user still wishes to start the workout
-        if ((heartrate == 0 || heartrate == null) && WorkoutUIState == UISTATE_WAITINGFORHR) {
-            var dialog = new Ui.Confirmation("No HR Detected, Start Anyway?");
-            var delegate = new StartConfirmationDelegate();
-			Ui.popView(Ui.SLIDE_DOWN);
+        if ((heartrate == 0 || heartrate == null)) {
+			//Ui.popView(Ui.SLIDE_DOWN);
             // Open the HR confirmation dialog
-            Ui.pushView(dialog, delegate, Ui.SLIDE_UP );
+            //Ui.pushView(new Ui.Confirmation("Do you want to wait for HR?"), new StartConfirmationDelegate(), Ui.SLIDE_UP );
+             WorkoutUIState = UISTATE_WAITINGFORHR;
         } else {
             //confirmed = true;
             //WorkoutUIState = UISTATE_READYTOSTART;
@@ -407,10 +408,11 @@ class IHController
         return value;
     }
     
+    /*
     function getAskActivity(){
         var value = getBooleanPref(ASK_ACTIVITY, true);
         return value;
-    }
+    }*/
 
 	/*
     //! Return boolean of HR Stability setting preference
@@ -459,60 +461,21 @@ class StartConfirmationDelegate extends Ui.ConfirmationDelegate {
 
     function initialize() {
         ConfirmationDelegate.initialize();
-        // Get the controller from the application class
         mController = Application.getApp().controller;
     } 
     
     function onResponse(value) {
         if (value == Ui.CONFIRM_YES) {
-        	mController.startWorkout();
-        } 
-    }
-
-}
-
-/*
-//! This delegate handles input for the Menu pushed when the user hits the stop button
-class EndWorkoutDelegate extends Ui.MenuInputDelegate {
-
-    hidden var mController;
-
-    // Constructor
-    function initialize() {
-        MenuInputDelegate.initialize();
-        mController = Application.getApp().controller;
-    }
-
-    // Handle the menu input
-    function onMenuItem(item) {
-    
-        if (item == :resume) {
-            mController.onStartStop();
-            
-        } else if (item == :save) {
-            mController.save();
-            
-        } else if (item == :discard) {
-            Ui.pushView(new Ui.Confirmation("Discard\nWorkout?"), new DiscardConfirmationDelegate(), Ui.SLIDE_UP );
+        	mController.WorkoutUIState = mController.UISTATE_WAITINGFORHR; 
+        	Ui.popView(Ui.SLIDE_DOWN);
+        } else {
+        	//Ui.popView(Ui.SLIDE_DOWN);
+        	//Ui.popView(Ui.SLIDE_DOWN);
+        	//System.exit();
+        	//mController.WorkoutUIState = mController.UISTATE_EXITONBACK;
+        	//System.println("ConfirmationDelegate Cancel: "+mController.WorkoutUIState);
+        	
         }
     }
-}
-
-class DiscardConfirmationDelegate extends Ui.ConfirmationDelegate {
-
-    hidden var mController;
-
-    function initialize() {
-        ConfirmationDelegate.initialize();
-        // Get the controller from the application class
-        mController = Application.getApp().controller;
-    }
-
-    function onResponse(value) {
-        if (value == Ui.CONFIRM_YES) {
-            mController.discard();
-        } 
-    }
 
 }
-*/
