@@ -98,7 +98,7 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
 			if(mController.WorkoutUIState == mController.UISTATE_RUNNING){
 				//Toggle Mode
 				mController.hrZoneMode = mController.hrZoneMode==1?2:1; 
-				IHWorkoutView.hrZoneModeChanged = true;
+				mController.forceOnUpdate = true;
 				//mController.vibrate(0);
 			}
 		}

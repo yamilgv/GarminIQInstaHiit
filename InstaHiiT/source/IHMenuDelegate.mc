@@ -68,7 +68,7 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
         menu.addItem("Start",:Start);
         menu.addItem("Change Activity", :ActivityType);
 		menu.addItem("More...",:More);
-		menu.addItem("Exit!",:Exit);
+		menu.addItem("Exit",:Exit);
 		
 		return menu;
     }
@@ -109,13 +109,13 @@ class IHMenuDelegate extends Ui.MenuInputDelegate {
 
         //Save Workout            
         if (item == :save) {
-            Ui.pushView(new Ui.Confirmation("Save and End\nWorkout?"), new SaveConfirmationDelegate(), Ui.SLIDE_UP );
+            Ui.pushView(new Ui.Confirmation("Save & End\nWorkout?"), new SaveConfirmationDelegate(), Ui.SLIDE_UP );
         	return true;
         }
             
         //Discard Workout            
         if (item == :discard) {
-            Ui.pushView(new Ui.Confirmation("Discard\nWorkout?"), new DiscardConfirmationDelegate(), Ui.SLIDE_UP );
+            Ui.pushView(new Ui.Confirmation("Discard & Exit\nWorkout?"), new DiscardConfirmationDelegate(), Ui.SLIDE_UP );
         	return true;
         }
     

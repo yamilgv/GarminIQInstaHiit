@@ -51,6 +51,8 @@ class IHWorkoutView extends Ui.View {
 	hidden var devXCenter; //Device X Center
 	hidden var devYCenter; //Device Y Center
 	
+	var simulateHRArray;
+	
 	var hrZoneModeChanged = false;
 
     function initialize() {
@@ -103,7 +105,7 @@ class IHWorkoutView extends Ui.View {
     
     System.println("onShow");
     
-        System.println("onShow Received State: "+mController.WorkoutUIState);
+        //System.println("onShow Received State: "+mController.WorkoutUIState);
         
        	//If Start has not been pressed
 		if(mController.WorkoutUIState == mController.UISTATE_WAITINGTOSTART) {
@@ -167,12 +169,17 @@ class IHWorkoutView extends Ui.View {
     
 		var timer = mModel.getTimeElapsed(); //Seconds
 		
-
 		
 		//If Start has not been pressed, do nothing
 		if(mController.WorkoutUIState == mController.UISTATE_WAITINGTOSTART) {
 			return;
 		}
+		
+		//Testing HardCode Values for IQ Store Screenshoots
+		/*
+		drawTestValues(dc, timer);
+		plotTestHRgraph(dc,timer);
+		return;*/
 		
 		// Plot heart rate graph every 60 seconds, at the 10 seconds of the minute
 		//Do not update anything else but timers to smooth UI update and reduce drawing glitches
@@ -198,17 +205,17 @@ class IHWorkoutView extends Ui.View {
 
 			//Draw Labels
 			dc.setColor(uiColorsArray[3], Graphics.COLOR_TRANSPARENT);	
-	    	dc.drawText(53, 30,  mController.FONTXTINY, "Kcal", Graphics.TEXT_JUSTIFY_CENTER);
+	    	dc.drawText(53, 30,  mController.FONTXTINY, "Max", Graphics.TEXT_JUSTIFY_CENTER);
 	    	dc.drawText(190, 30, mController.FONTXTINY, "IMin", Graphics.TEXT_JUSTIFY_CENTER);
-	    	dc.drawText(38, 73,  mController.FONTXTINY, "Max",  Graphics.TEXT_JUSTIFY_CENTER); 
+	    	dc.drawText(38, 73,  mController.FONTXTINY, "Kcal",  Graphics.TEXT_JUSTIFY_CENTER); 
 	    	dc.drawText(devXCenter, 29, mController.FONTXTINY, "Peak", Graphics.TEXT_JUSTIFY_CENTER); 
        		if(mModel.isGPSOn() == true) {dc.drawText(70, 12, mController.FONTXXXTINY, "GPS", Graphics.TEXT_JUSTIFY_CENTER);} //Draw GPS string if enabled
     
 			//Draw IMin, Kcal and MakHR
 			dc.setColor(uiColorsArray[2], Graphics.COLOR_TRANSPARENT);
 	        dc.drawText(190, 47, mController.FONTTINY, mModel.getIntesityMinutes(), Graphics.TEXT_JUSTIFY_CENTER);
-	        dc.drawText(54, 47, mController.FONTTINY, mModel.getCalories(), Graphics.TEXT_JUSTIFY_CENTER);
-	        dc.drawText(36, 90, mController.FONTSMALL, maxHR, Graphics.TEXT_JUSTIFY_CENTER);
+	        dc.drawText(54, 47, mController.FONTTINY, maxHR, Graphics.TEXT_JUSTIFY_CENTER);
+	        dc.drawText(36, 90, mController.FONTSMALL, mModel.getCalories(), Graphics.TEXT_JUSTIFY_CENTER);
 		
 			//Peak HR and Percent
 			var peakHR = mModel.getPeakHR();	
@@ -271,14 +278,13 @@ class IHWorkoutView extends Ui.View {
 	    	dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(mModel.getAvgHRbpm())], Graphics.COLOR_TRANSPARENT);	
 	        dc.drawText(195, 90, mController.FONTSMALL, mModel.getAvgHRbpm(), Graphics.TEXT_JUSTIFY_CENTER);
 	    	
-	    	//Draw Saved! Top
+	    	//Draw End of Workout Fields
 			dc.setColor(uiColorsArray[4], Graphics.COLOR_TRANSPARENT);	
-			dc.drawText(devXCenter, 4, mController.FONTXTINY, "Saved!", Graphics.TEXT_JUSTIFY_CENTER); //Draw Calories
+			dc.drawText(devXCenter, 4, mController.FONTXTINY, "Done", Graphics.TEXT_JUSTIFY_CENTER);
 			
-			//Draw End of Workout Fields
 			dc.setColor(uiColorsArray[2], Graphics.COLOR_TRANSPARENT);	
 			dc.drawText(devXCenter, 70, mController.FONTSMALL, "Workout", Graphics.TEXT_JUSTIFY_CENTER);
-			dc.drawText(devXCenter, 95, mController.FONTSMALL, "Done.", Graphics.TEXT_JUSTIFY_CENTER);
+			dc.drawText(devXCenter, 95, mController.FONTSMALL, "Saved", Graphics.TEXT_JUSTIFY_CENTER);
 			
 			mController.hrZoneMode = 2; drawZonesLegend(dc);//Show Minutes in each zone at WorkoutEnd
 			
@@ -447,7 +453,6 @@ class IHWorkoutView extends Ui.View {
         return timeString;
     }
     
-	//function plotHRgraph(dc, elapsedSecs) {
 	function plotHRgraph(dc, timer) {
 		
 		//Clean Graph Background
@@ -461,7 +466,7 @@ class IHWorkoutView extends Ui.View {
 	
 		//Make sure Graph limits are aceptable
 		maxSecs = timer;
-		if (maxSecs < 900) { maxSecs = 900; }         	// 900sec = 15min
+		if (maxSecs < 900) { maxSecs = 900;} // 900sec = 15min
 		else if (maxSecs > 14355) { maxSecs = 14355; }  // 14400sec = 4hrs
 		var binWidthSecs = Math.floor(binPixels * maxSecs / totWidth).toNumber(); //Amount of time that average a bin	
 		var maxSecsDuration = new Time.Duration(maxSecs); 
@@ -470,7 +475,7 @@ class IHWorkoutView extends Ui.View {
 		//dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
 		//dc.drawText(devXCenter, 120, mController.FONTXTINY, "iMax: " + sample.getMax() + " iMin: " + sample.getMin(), Graphics.TEXT_JUSTIFY_CENTER); 
 								
-		//If no HR Iterator was found leave Graph space empty	
+		//If no HR Iterator was found leave Graph Space empty	
 		if (sample == null) {return;}
 		
 		//In the first run, get the maximun and minimun HRs available for the first 15 min
@@ -483,26 +488,26 @@ class IHWorkoutView extends Ui.View {
 					if(fheart.when.value() >= timeLimit){
 						if (fheart.data > heartMax) { heartMax = fheart.data; }
 						if (fheart.data < heartMin) { heartMin = fheart.data; }
-					} else {
-						stopWhile = true;
+						} else { stopWhile = true;
 					}
 				}
 			fheart = sample.next();
 			}
-			//dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
-			//dc.drawText(devXCenter, 140, mController.FONTXTINY, "Max: " + heartMax + " Min: " + heartMin, Graphics.TEXT_JUSTIFY_CENTER);
-			//System.println("Max: " + heartMax + " Min: " + heartMin);
-			return;
+			
+		System.println("Timer Zero Values: heartMax" +  heartMax  + " heartMin " + heartMin); 
+		
+			
+		//Reset Iterator to be used in graph drawing
+		sample = Sensor.getHeartRateHistory( {:duration=>maxSecsDuration,:order=>Sensor.ORDER_NEWEST_FIRST});
+
 		}
 	  	
-		var heart = sample.next();
-		//var curHeartMin = sample.getMin();
-		//var curHeartMax = sample.getMax();
-		var curHeartMin = heartMin;
+		
+		var curHeartMin = heartMin - 3; //Avoid actual values touch the bottom of the graph making the min artificially three pixels less
 		var curHeartMax = heartMax;
-		//heartMin = 1000;
-	    //heartMax = 0;
-
+		var yDenominator = ((curHeartMax-curHeartMin)) < totHeight?totHeight.toDouble():(curHeartMax-curHeartMin).toDouble(); //If Denominator is less than the total pixels on the graph, use the totHeight to avoid missing pixels while drawing
+		
+		
 		var heartSecs;
 		var heartValue = 0;
 		var secsBin = 0;
@@ -515,7 +520,6 @@ class IHWorkoutView extends Ui.View {
 		var tempHeartBin = 0;
 		var tHeartBinMax = 0;
 		var finished = false;
-		//var heartBinMid = 0;
 		var prevHeight = 0;
 		var height = 0;
 		var xVal = 0;
@@ -530,10 +534,12 @@ class IHWorkoutView extends Ui.View {
 		xIndicator = xValConst - (totBins * ((timer*1.00)/maxSecs)*binPixels);
 		if(xIndicator<xValConst-totWidth){xIndicator = xValConst-totWidth;}
 		
+		
 		//Draw arrow at top of graph representing when the workout started
 		//dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_TRANSPARENT);
 		//dc.fillPolygon([[xIndicator-5, (yVal-4)],[xIndicator, (yVal+1)], [xIndicator+5, (yVal-4)]]);
 	
+		var heart = sample.next();
 		for (var i = 0; i < totBins; ++i) {
 		
 			heartBinMax = 0;
@@ -587,29 +593,31 @@ class IHWorkoutView extends Ui.View {
 				//Draw Line in zone color if HR was found
 				//System.println(i + " prevHeartBinMin:   " +prevHeartBinMin + " prevHeartBinMax: " + prevHeartBinMax + " " + heartBinMin + " " + heartBinMax);
 				//System.println(i + " getMax:   " + sample.getMax() + " getMin: " + sample.getMin());
-				if (heartBinMax > 0 && heartBinMax >= heartBinMin){
+				if ((heartBinMax > 0 && heartBinMax >= heartBinMin)){
 				
-					if (curHeartMax > 0 && curHeartMax > curHeartMin) {
+					if ((curHeartMax > 0 && curHeartMax > curHeartMin)) {
 
-						//heartBinMid = (heartBinMax+heartBinMin)/2;
-				
 						prevHeight = 0;
 						tHeartBinMax = prevHeartBinMin > heartBinMax? prevHeartBinMin:heartBinMax; 
 						tempHeartBin = prevHeartBinMax < heartBinMin? prevHeartBinMax:heartBinMin;
+						
+						//System.println(i + " timer "+ timer + " heartBinMax: " + heartBinMax + " heartBinMin: " + heartBinMin + " tHeartBinMax: "+tHeartBinMax + " tempHeartBin "+ tempHeartBin + " curHeartMin "+ curHeartMin + " Denominador " + yDenominator );
+						
 						while(tempHeartBin <= tHeartBinMax) { 
-							//height = ((tempHeartBin-curHeartMin*0.9) / (curHeartMax-curHeartMin*0.9) * totHeight).toNumber();
-							height = ((tempHeartBin-curHeartMin*0.9) / (curHeartMax-curHeartMin*0.9) * totHeight).toNumber();
+							height = ((tempHeartBin-curHeartMin) / (yDenominator) * totHeight).toNumber();
 							if(prevHeight != height){ //Avoid drawing the same dot again
 								//System.println(i + " xVal:   " + xVal + " xIndicator: " + xIndicator + " dasherCnt: "+dasherCnt);
+								
 								//Draw Dash Line for the first minutes of the graph not within the workout time
 								if(xVal < xIndicator){
 									if(dasherCnt < 3) {
 										dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(tempHeartBin)], Gfx.COLOR_TRANSPARENT);
 										dc.drawRectangle(xVal, yVal + totHeight - height, 2, 2);
-										System.println(i + " DotDrwan dasherCnt: "+dasherCnt);
+										//System.println(i + " DotDrwan dasherCnt: "+dasherCnt);
 									}
 									dasherCnt= dasherCnt>5?0:dasherCnt+1;
-									
+								
+								//Draw solid line during workout	
 								} else {
 									dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(tempHeartBin)], Gfx.COLOR_TRANSPARENT);
 									//dc.setColor(uiHRZoneColor[getHRTestColour(tempHeartBin)], Gfx.COLOR_TRANSPARENT); 
@@ -617,13 +625,312 @@ class IHWorkoutView extends Ui.View {
 									//dc.fillCircle(xVal, yVal + totHeight - height, 1);
 								}
 							}
+							
 							tempHeartBin++;
 							prevHeight = height;
-						}
+							
+						}//while
 						
 						prevHeartBinMin = heartBinMin;
 						prevHeartBinMax = heartBinMax;
+					} 
+				}		
+
+			} //if !finished
+
+		} // loop over all bins
+		
+		//Draw a shadow representing HR measurements out of the workout timeframe	
+		//xIndicator = xValConst - (totBins * ((timer*1.00)/maxSecs)*binPixels);
+		//dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
+		//for (var i = xValConst-totBins; i < xIndicator; i=i+4) { dc.drawLine(i, yVal, i, yVal+totHeight);} //Vertical Lines
+		/*for (var i = yVal; i < yVal+totHeight; i=i+2) {dc.drawLine(xIndicator, i, (xValConst+totBins), i);}*/ //Horizontal Lines
+		
+		//Draw a short tick on the line representing the desired time interval
+		var xTickIndicator; 
+		var iOffSet = 0; //timer/tickInterval;
+		//System.println("Interval1 Limit "+maxSecs/(tickInterval)+" "+maxSecs+" "+tickInterval);
+		for(var i = 0 - iOffSet; i <= (maxSecs/(tickInterval))+iOffSet; i++){
+			xTickIndicator =  xValConst - (totBins * ((tickInterval*i*1.00)/maxSecs))*binPixels; //(xIndicator + (totBins * ((tickInterval*i)/maxSecs))*binPixels);
+			//System.println(i+" xTickIndicator1 "+xTickIndicator);
+			if(xTickIndicator<xValConst-totWidth){xIndicator = xValConst-totWidth;}
+			dc.setColor(uiColorsArray[2], Gfx.COLOR_TRANSPARENT);
+			var tickLengh = ((tickInterval*i)%(tickInterval*4)) == 0? 7: ((tickInterval*i)%(tickInterval*2)) == 0? 5 : 3; 
+			dc.fillRectangle(xTickIndicator-1, yVal+totHeight-tickLengh, binPixels*3, tickLengh);
+		}
+			
+	}
+
+	function drawTestValues(dc, timer){
+	
+			timer = 2752;
+	
+			//Clean Top Header Area
+			dc.setColor(uiColorsArray[1], Gfx.COLOR_TRANSPARENT);
+			dc.fillRectangle(0, 0, devWidth, 32); 
+	
+			//Clear HR Fields Area
+			dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
+			dc.fillRectangle(0, 32, devWidth, 92); 
+
+			drawTimers(dc, timer);
+
+			//Draw Labels
+			dc.setColor(uiColorsArray[3], Graphics.COLOR_TRANSPARENT);	
+	    	dc.drawText(53, 30,  mController.FONTXTINY, "Max", Graphics.TEXT_JUSTIFY_CENTER);
+	    	dc.drawText(190, 30, mController.FONTXTINY, "IMin", Graphics.TEXT_JUSTIFY_CENTER);
+	    	dc.drawText(38, 73,  mController.FONTXTINY, "Kcal",  Graphics.TEXT_JUSTIFY_CENTER); 
+	    	dc.drawText(devXCenter, 29, mController.FONTXTINY, "Peak", Graphics.TEXT_JUSTIFY_CENTER); 
+       		if(mModel.isGPSOn() == true) {dc.drawText(70, 12, mController.FONTXXXTINY, "GPS", Graphics.TEXT_JUSTIFY_CENTER);} //Draw GPS string if enabled
+    
+			//Draw IMin, Kcal and MakHR
+			dc.setColor(uiColorsArray[2], Graphics.COLOR_TRANSPARENT);
+	        dc.drawText(190, 47, mController.FONTTINY, 23, Graphics.TEXT_JUSTIFY_CENTER);
+	        dc.drawText(54, 47, mController.FONTTINY, maxHR, Graphics.TEXT_JUSTIFY_CENTER);
+	        dc.drawText(36, 90, mController.FONTSMALL, 742, Graphics.TEXT_JUSTIFY_CENTER);
+		
+			//Peak HR and Percent
+			var heartRate = 125;
+			var peakHR = 172;	
+			var peakPct = Math.round(( peakHR.toDouble() / maxHR.toDouble() ) * 100).toNumber();
+			var peakHRCombo = 172+" "+ peakPct; //Peak HR and Peak HR Pecent concatenated 
+			var percSymOffset = dc.getTextWidthInPixels(peakHRCombo, mController.FONTSMALL)/2;
+        	dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(peakHR)], Graphics.COLOR_TRANSPARENT);
+        	dc.drawText(devXCenter, 44, mController.FONTSMALL, peakHRCombo, Graphics.TEXT_JUSTIFY_CENTER); //Peak HR and Peak HR Pecent concatenated 
+		    dc.setColor(uiColorsArray[3], Graphics.COLOR_TRANSPARENT);
+		    dc.drawText(devXCenter+percSymOffset+5, 44, mController.FONTXXXTINY, "%", Graphics.TEXT_JUSTIFY_CENTER); //Percentage Symbol 
+		    
+		    //Draw Batt and Temperature
+			if(showBattTempFields == true) {drawSlowUpdatingFields(dc, timer);}	
+			
+	    	//Draw Time
+	    	dc.setColor(uiColorsArray[4], Graphics.COLOR_TRANSPARENT);
+			dc.drawText(devXCenter, 1, mController.FONTSMALL, getTimeString(), Graphics.TEXT_JUSTIFY_CENTER); 
+
+            //Get current HeartRate and Percent
+            var curZone = mModel.getHRZoneColorIndex(heartRate);
+	        dc.setColor(uiHRZoneColor[curZone], Graphics.COLOR_TRANSPARENT);
+	        dc.drawText(devXCenter, 60, mController.FONTXXLARGE, heartRate, Graphics.TEXT_JUSTIFY_CENTER); //Current HR
+	        var currHRRpct = Math.round(( heartRate.toDouble() / maxHR.toDouble() ) * 100).toNumber() + "";
+	        dc.drawText(200, 80, mController.FONTLARGE, currHRRpct, Graphics.TEXT_JUSTIFY_CENTER); //Current HR Percent
+	        dc.setColor(uiColorsArray[3], Graphics.COLOR_TRANSPARENT);
+	        dc.drawText(200 + (dc.getTextWidthInPixels(currHRRpct, mController.FONTLARGE)/2) + 5, 80, mController.FONTXTINY, "%", Graphics.TEXT_JUSTIFY_CENTER); //Percentage Symbol
+	        
+	        //Update Max/Min HR till the moment
+	        if(heartRate > 0){
+	        	if (heartRate > heartMax) { heartMax = heartRate; }
+				if (heartRate < heartMin) { heartMin = heartRate; }
+			}
+			//System.println("Max: " + heartMax + " Min: " + heartMin);
+	        
+	        //Draw only when coming from OnShow or Every 10 Seconds if showing Minutes in HRZones 
+        	if(mController.forceOnUpdate || hrZoneModeChanged || (((timer) % 10) == 0 && mController.hrZoneMode == 2)) { drawZonesLegend(dc); }
+
+        	//mController.forceOnUpdate = false;
+	        
+	        //Check Zone Change after every 5 seconds to prevent back to back vibration events
+	    	//if((timer - vibeTime) > 5) {zoneChangeEvents(curZone, timer);}
+		    
+	
+	}
+
+	function plotTestHRgraph(dc, timer) {
+	
+		if(timer > 0) {timer =1; return;}
+		//timer = 100;
+		getSimulateHRArray(); 
+		var simulatedIdx = 0;
+		
+		//Clean Graph Background
+		dc.setColor(uiColorsArray[0], Gfx.COLOR_TRANSPARENT);
+		dc.fillRectangle(0, 124, devWidth, 50); 
+		
+		if(!(Toybox has :SensorHistory)){ return;} //Leave Graph empty if no sensor found
+			
+		//var curHeartMin = 1000; //0;
+		//var curHeartMax = 0;    //0;
+	
+		//Make sure Graph limits are aceptable
+		maxSecs = timer;
+		if (maxSecs < 900) { maxSecs = 2700;}//900; }         	// 900sec = 15min
+		else if (maxSecs > 14355) { maxSecs = 14355; }  // 14400sec = 4hrs
+		var binWidthSecs = Math.floor(binPixels * maxSecs / totWidth).toNumber(); //Amount of time that average a bin	
+		var maxSecsDuration = new Time.Duration(maxSecs); 
+		var sample = Sensor.getHeartRateHistory( {:duration=>maxSecsDuration,:order=>Sensor.ORDER_NEWEST_FIRST});  //Seems to always return all history
+		//System.println("Iterator:" +  sample.getMax() + " " + sample.getMin()); //Always return de whole history Max/min not of the Duration
+		//dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
+		//dc.drawText(devXCenter, 120, mController.FONTXTINY, "iMax: " + sample.getMax() + " iMin: " + sample.getMin(), Graphics.TEXT_JUSTIFY_CENTER); 
+								
+		//If no HR Iterator was found leave Graph space empty	
+		if (sample == null) {return;}
+		
+		//In the first run, get the maximun and minimun HRs available for the first 15 min
+		if(timer == 0) {
+			var timeLimit = Time.now().value() - maxSecs; //Previous 15 min
+			var stopWhile = false; 
+			var fheart = sample.next();
+			while (fheart!=null && !stopWhile) {
+				if(fheart.data != null) {
+					if(fheart.when.value() >= timeLimit){
+						if (fheart.data > heartMax) { heartMax = fheart.data; }
+						if (fheart.data < heartMin) { heartMin = fheart.data; }
+					} else {
+						stopWhile = true;
 					}
+				}
+			fheart = sample.next();
+			}
+			//dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
+			//dc.drawText(devXCenter, 140, mController.FONTXTINY, "Max: " + heartMax + " Min: " + heartMin, Graphics.TEXT_JUSTIFY_CENTER);
+			//System.println("Max: " + heartMax + " Min: " + heartMin);
+			//Reset Iterator to be used in graph drawing
+			sample = Sensor.getHeartRateHistory( {:duration=>maxSecsDuration,:order=>Sensor.ORDER_NEWEST_FIRST});
+			//return;
+		}
+		
+		heartMin = 75;
+	    heartMax = 175;
+	  	
+		
+		//var curHeartMin = sample.getMin();
+		//var curHeartMax = sample.getMax();
+		var curHeartMin = heartMin - 3; //Avoid actual values touch the bottom of the graph making the min artificially three pixels less
+		var curHeartMax = heartMax;
+		var yDenominator = ((curHeartMax-curHeartMin)) < totHeight?totHeight.toDouble():(curHeartMax-curHeartMin).toDouble(); //If Denominator is less than the total pixels on the graph, use the totHeight to avoid missing pixels while drawing
+		
+		var heartSecs;
+		var heartValue = 0;
+		var secsBin = 0;
+		var lastHeartSecs = sample.getNewestSampleTime().value();
+		var heartBinMax;
+		var heartBinMin;
+
+		var prevHeartBinMin = 0;
+		var prevHeartBinMax = 1000;
+		var tempHeartBin = 0;
+		var tHeartBinMax = 0;
+		var finished = false;
+		var prevHeight = 0;
+		var height = 0;
+		var xVal = 0;
+		var dasherCnt = 0;  //used to dash the line of the first minutes not within the workout
+		
+		//Draw an static arrow at top of graph representing current and end workout time	
+		var xIndicator = xValConst; // + (totBins * ((mModel.getTimeElapsed()*1.00)/maxSecs))*binPixels);
+		dc.setColor(uiColorsArray[3], Gfx.COLOR_TRANSPARENT);
+		dc.fillPolygon([[xIndicator-5, (yVal-4)],[xIndicator, (yVal+1)], [xIndicator+5, (yVal-4)]]);
+		
+		//Calculate dynamic x used to draw dashed lines of out of workout time at the beginning 	
+		xIndicator = xValConst - (totBins * ((timer*1.00)/maxSecs)*binPixels);
+		if(xIndicator<xValConst-totWidth){xIndicator = xValConst-totWidth;}
+		
+		//Draw arrow at top of graph representing when the workout started
+		//dc.setColor(Gfx.COLOR_PURPLE, Gfx.COLOR_TRANSPARENT);
+		//dc.fillPolygon([[xIndicator-5, (yVal-4)],[xIndicator, (yVal+1)], [xIndicator+5, (yVal-4)]]);
+	 	var heart = sample.next();
+		for (var i = 0; i < totBins; ++i) {
+		
+			heartBinMax = 0;
+			heartBinMin = 0;
+			
+			if (!finished)
+			{
+				//deal with carryover values
+				if (secsBin > 0 && heartValue != null)
+				{
+					heartBinMax = heartValue;
+					heartBinMin = heartValue;
+				}
+
+				//deal with new values in this bin
+				/*
+				while (!finished && secsBin < binWidthSecs)
+				{
+					heart = sample.next();
+					if (heart == null) { finished = true;}
+					else
+					{
+						heartValue = heart.data;
+						if (heartValue != null)
+						{
+							if (heartBinMax == 0)
+							{
+								heartBinMax = heartValue;
+								heartBinMin = heartValue;
+							}
+							else
+							{
+								if (heartValue > heartBinMax)
+									{ heartBinMax = heartValue; }
+								if (heartValue < heartBinMin)
+									{ heartBinMin = heartValue; }
+							}
+						}
+
+						// keep track of time in this bin
+						heartSecs = lastHeartSecs - heart.when.value();
+						lastHeartSecs = heart.when.value();
+						secsBin += heartSecs;
+						//System.println(i + ":   " + heartValue + " " + heartSecs + " " + secsBin + " " + heartBinMin + " " + heartBinMax);
+					}
+
+				} */ // while secsBin < binWidthSecs
+
+				if (secsBin >= binWidthSecs) { secsBin -= binWidthSecs; }
+			    xVal = xValConst - i*binPixels;
+
+				//Draw Line in zone color if HR was found
+				//System.println(i + " prevHeartBinMin:   " +prevHeartBinMin + " prevHeartBinMax: " + prevHeartBinMax + " " + heartBinMin + " " + heartBinMax);
+				//System.println(i + " getMax:   " + sample.getMax() + " getMin: " + sample.getMin());
+				//if ((heartBinMax > 0 && heartBinMax >= heartBinMin)){
+				
+					//if ((curHeartMax > 0 && curHeartMax > curHeartMin)) {
+
+						//heartBinMid = (heartBinMax+heartBinMin)/2;
+						
+						if(simulatedIdx<simulateHRArray.size()){ //simulateHRArray.size()
+						heartBinMin = simulateHRArray[simulatedIdx];
+						simulatedIdx = simulatedIdx + 1;
+						heartBinMax = simulateHRArray[simulatedIdx];
+						simulatedIdx = simulatedIdx + 1;} else {
+						heartBinMin = 100;
+						heartBinMax = 102;
+						i = totBins;}
+				
+						prevHeight = 0;
+						tHeartBinMax = prevHeartBinMin > heartBinMax? prevHeartBinMin:heartBinMax; 
+						tempHeartBin = prevHeartBinMax < heartBinMin? prevHeartBinMax:heartBinMin;
+						
+						//System.println(i + " timer "+ timer + " heartBinMax: " + heartBinMax + " heartBinMin: " + heartBinMin + " tHeartBinMax: "+tHeartBinMax + " tempHeartBin "+ tempHeartBin + "yDenominador " + yDenominador );
+						
+						while(tempHeartBin <= tHeartBinMax) { 
+							//height = ((tempHeartBin-curHeartMin*0.9) / (curHeartMax-curHeartMin*0.9) * totHeight).toNumber();
+							height = ((tempHeartBin-curHeartMin) / (yDenominator) * totHeight).toNumber();
+							/*if(prevHeight != height){ //Avoid drawing the same dot again
+								//System.println(i + " xVal:   " + xVal + " xIndicator: " + xIndicator + " dasherCnt: "+dasherCnt);
+								//Draw Dash Line for the first minutes of the graph not within the workout time
+								if(xVal < xIndicator){
+									if(dasherCnt < 3) {
+										dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(tempHeartBin)], Gfx.COLOR_TRANSPARENT);
+										dc.drawRectangle(xVal, yVal + totHeight - height, 2, 2);
+										//System.println(i + " DotDrwan dasherCnt: "+dasherCnt);
+									}
+									dasherCnt= dasherCnt>5?0:dasherCnt+1;
+									
+								} else {*/
+									dc.setColor(uiHRZoneColor[mModel.getHRZoneColorIndex(tempHeartBin)], Gfx.COLOR_TRANSPARENT);
+									//dc.setColor(uiHRZoneColor[getHRTestColour(tempHeartBin)], Gfx.COLOR_TRANSPARENT); 
+									dc.drawRectangle(xVal, yVal + totHeight - height, 2, 2);
+									//dc.fillCircle(xVal, yVal + totHeight - height, 1);
+								/*}
+							}*/
+							tempHeartBin++;
+							prevHeight = height;
+						//}
+						
+						prevHeartBinMin = heartBinMin;
+						prevHeartBinMax = heartBinMax;
+					//}
 
 					//if (heartBinMin < heartMin) 
 					//	{ heartMin = heartBinMin; } 
@@ -657,9 +964,12 @@ class IHWorkoutView extends Ui.View {
 			
 	}
 
+
 	//Used for force drawing colors whhen testing in the Emulator
 	function getHRTestColour(mHeartRate)
 	{
+	
+		
 	 	var mZones = [79, 82, 86, 88, 90, 92];//fake zones 
 			
 		// Gray Zone
@@ -681,6 +991,52 @@ class IHWorkoutView extends Ui.View {
         
         // Gray Zone - Default
         return 1;
+	}
+	
+		//Used for force drawing colors whhen testing in the Emulator
+	function getTestHR(i, mHeartRate)
+	{
+	
+		getSimulateHRArray();
+	
+		if (mHeartRate == null) {return;}
+	 	var mZones = [79, 82, 86, 88, 90, 92];//fake zones 
+	 	
+	 	//Math.srand(i);
+	 	Math.srand(i);
+	 	//i = Math.rand();
+	 	var r = Math.rand() % 900 + 100; //Random number between 100 and 1000 (900+100)
+	 	//r = r/1000.00;
+	 	System.println("Irand:" + r  );
+	 	
+	 	
+	 	var RAND_MAX = 1000.00;
+
+// return a random value on the range [n, m]
+		mHeartRate = 75 + r /  (165.00 - 75.00 + 1.0);
+    	//mHeartRate = 165 + Math.rand() / (RAND_MAX / (165 - 75 + 1) + 1);
+		System.println("HR " + mHeartRate );
+		return mHeartRate;
+			
+		// Gray Zone
+        if ( mHeartRate < mZones[0] ) {
+            return mHeartRate * (r + 1) ;
+        // Blue Zone
+        } else if ( mHeartRate < mZones[1] ) {
+            return mHeartRate * 1.07;
+        // Green Zone
+        } else if ( mHeartRate < mZones[2] ) {
+            return mHeartRate * 1.10;
+        // Orange Zone
+        } else if ( mHeartRate < mZones[3] ) {
+            return mHeartRate * 1.06;
+        //Red Zone
+        } else if ( mHeartRate >= mZones[3] ) {
+            return mHeartRate;
+        }
+        
+        // Gray Zone - Default
+        return mHeartRate;
 	}
 	
 	function clamp(min, max, value) {
@@ -714,4 +1070,246 @@ class IHWorkoutView extends Ui.View {
 		return;
 		
     }
+    
+    function getSimulateHRArray() {
+    
+    simulateHRArray = [
+    
+    95,96,
+    96,96,
+    95,96,
+    97,98,
+	98,101,
+	101,110,
+	101,101,
+	101,112,
+	102,113,
+	108,112,
+	107,113,
+	109,110,
+	111,115,
+	112,112,
+	100,112,
+	109,111,
+	105,111,
+	105,100,
+	99,100,
+	100,105,
+	102,104,
+	
+	104,106,
+    106,107,
+    110,105,
+    111,115,
+	116,119,
+	120,124,
+	125,130,
+	131,143,
+	144,145,
+	142,146,
+	143,146,
+	140,143,
+	142,142,
+	139,140,
+	140,142,
+	137,142,
+	137,141,
+	135,142,
+	134,139,
+	140,144,
+	144,145,
+	
+	146,155,
+    155,156,
+    155,156,
+    154,158,
+	155,155,
+	151,160,
+    155,159,
+    155,156,
+    154,158,
+	155,155,
+	149,155,
+    155,156,
+    155,156,
+    154,158,
+	155,155,
+	155,155,
+    155,156,
+    155,156,
+    154,158,
+	155,159,
+	
+	155,155,
+    154,156,
+    155,156,
+    156,158,
+	155,155,
+	157,160,
+    150,159,
+    155,155,
+    154,156,
+	155,155,
+	158,158,
+    155,160,
+    155,162,
+    150,155,
+	155,155,
+	154,155,
+    155,156,
+    155,156,
+    154,156,
+	155,155,
+	
+	155,155,
+    154,156,
+    155,156,
+    158,158,
+	159,162,
+	160,160,
+    161,165,
+    165,170,
+    165,171,
+	161,170,
+	159,159,
+    159,160,
+    160,162,
+    160,163,
+	158,162,
+	160,161,
+    160,162,
+    161,163,
+    159,162,
+	158,161,
+	
+	155,155,
+    154,156,
+    155,156,
+    158,158,
+	159,165,
+	160,165,
+    164,165,
+    166,170,
+    170,173,
+	171,173,
+	168,170,
+    165,168,
+    162,167,
+    162,163,
+	158,162,
+	160,161,
+    159,162,
+    158,163,
+    159,162,
+	158,161,
+	
+	155,155,
+    154,154,
+    148,150,
+    146,148,
+	145,145,
+	144,144,
+    144,144,
+    145,146,
+    144,145,
+	144,145,
+	142,144,
+    141,143,
+    139,142,
+    133,142,
+	130,133,
+	129,135,
+    135,135,
+    133,133,
+    132,133,
+	132,133,
+	
+	135,136,
+    136,140,
+    140,145,
+    146,150,
+	150,155,
+	156,160,
+    155,159,
+    155,155,
+    149,155,
+	149,153,
+	153,158,
+    157,160,
+    155,160,
+    150,155,
+	155,155,
+	154,155,
+    155,156,
+    155,156,
+    154,156,
+	155,155,
+	
+	145,155,
+    146,150,
+    140,149,
+    138,140,
+	136,139,
+	136,137,
+    134,135,
+    130,134,
+    129,131,
+	131,132,
+	131,133,
+    125,130,
+    125,129,
+    125,128,
+	125,126,
+	126,126,
+    125,126,
+    125,126,
+    124,126,
+	115,123,
+	
+	115,123,
+    114,120,
+    115,119,
+    116,118,
+	116,117,
+	116,117,
+    116,116,
+    117,120,
+    120,123,
+	119,122,
+	118,119,
+    118,118,
+    114,117,
+    110,114,
+	112,114,
+	110,113,
+    110,112,
+    105,112,
+    107,110,
+	108,111,
+
+	105,108,
+    100,104,
+    99,101,
+    97,99,
+	98,99,
+	97,99,
+    95,98,
+    95,97,
+    95,97,
+	96,97,
+	97,97,
+    98,99,
+    91,97,
+    90,91,
+	90,91,
+	90,91,
+    89,90,
+    87,89
+
+    ];
+    
+    //System.println("simulateHRArray Size " + simulateHRArray.size());
+    
+    }
+    
 }
