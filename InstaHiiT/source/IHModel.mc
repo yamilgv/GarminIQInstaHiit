@@ -12,6 +12,7 @@ using Toybox.Math;
 using Toybox.WatchUi as Ui;
 using Toybox.Sensor; 
 using Toybox.Position;
+using Toybox.Graphics as Gfx;
 
 class IHModel
 {
@@ -30,7 +31,7 @@ class IHModel
     hidden var mHeartRate;
     hidden var mMaxHR;
     hidden var mZones;
-    hidden var mZoneTimes;
+    var mZoneTimes;
     //hidden var mSplats;
     //hidden var mSecondsSplat;
     hidden var mAverageHR;
@@ -49,11 +50,11 @@ class IHModel
     var actType;
 
     //Time in Zones
-    hidden var tz1 = 0;
-    hidden var tz2 = 0;
-    hidden var tz3 = 0;
-    hidden var tz4 = 0;
-    hidden var tz5 = 0;
+    //hidden var tz1 = 0;
+    //hidden var tz2 = 0;
+    //hidden var tz3 = 0;
+    //hidden var tz4 = 0;
+    //hidden var tz5 = 0;
 
     //HR Zone Percentage settings, based on Orange Theory, override user
     //hidden var blueZone = 0.61;
@@ -102,7 +103,7 @@ class IHModel
         // HR Zones
         mZones = new [4];
         // HR Time in Each Zone
-        mZoneTimes = new [5];
+        mZoneTimes = [ 0, 0, 0, 0, 0];
         mStability = true; //Make HR Stability Option On by Default Default
         mStabilityOn = false; // HR Stability internal logic variable
         mGPSOn = false;
@@ -121,7 +122,7 @@ class IHModel
     function start() {
         // Allocate the timer
         mTimer = new Timer.Timer();
-        // Process the sensors at 10 Hz
+        // Process the sensors every second
         mTimer.start(method(:hrFieldsCallback), 1000, true);
         // Start the FIT recording
         if ( mSession != null ) { mSession.start(); }
@@ -145,6 +146,11 @@ class IHModel
     function discard() {
     	if(mGPSOn == true) {Position.enableLocationEvents( Position.LOCATION_DISABLE, method( :onPosition ) );} //GPS will be disabled if previously enabled
         if ( mSession != null ) {mSession.discard();}
+    }
+    
+    //Create interval
+    function createInterval(){
+    	if ( mSession != null ) {mSession.addLap();}
     }
 
     // Return the Total calories burned
@@ -170,7 +176,7 @@ class IHModel
     
      // Return the Temperature 
     function getTemperature() {
-    	if(Toybox has :SensorHistory){
+    	if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getTemperatureHistory)) {
 	       var sensorIter = Toybox.SensorHistory.getTemperatureHistory({});
 	       var temp = (sensorIter != null)? sensorIter.next().data:null;
 	       
@@ -232,6 +238,7 @@ class IHModel
     }
     
     // Gets array with minutes in each HR Zone
+    /*
     function getZoneTimes(){
     
     	var hrZoneMinutes = new [5];
@@ -245,14 +252,11 @@ class IHModel
 		}
     
     	return hrZoneMinutes; 
-    }
+    }*/
     
     function getIntesityMinutes(){
     
-    	var zt4 = (mZoneTimes[3]==null)?0:mZoneTimes[3]/60; //HR Zone 4 = Array Index 3
-    	var zt5 = (mZoneTimes[4]==null)?0:mZoneTimes[4]/60; //HR Zone 5 = Array Index 4
-    	
-    	return zt4+zt5;
+    	return mZoneTimes[2]/60 +  mZoneTimes[3]/60 + mZoneTimes[4]/60; //HR Zone 3 + HR Zone 4 + HR Zone 5
     }
     
     
@@ -282,8 +286,7 @@ class IHModel
     //    mStability = option;
     //}
     
-    function setGPSTracking(option) {
-    	mGPSOn = option;
+    function setGPSTracking(mGPSOn) {
     	if(mGPSOn == true) {Position.enableLocationEvents( Position.LOCATION_CONTINUOUS, method( :onPosition ));}
     }
 
@@ -315,7 +318,29 @@ class IHModel
     }
     
     
-    function getHRZoneColorIndex(fHeartRate){
+    function getHRZoneColor(fHeartRate){       
+        
+        // Gray Zone
+        if ( fHeartRate < mZones[0] ) {
+            return Gfx.COLOR_LT_GRAY;
+        // Blue Zone
+        } else if ( fHeartRate < mZones[1] ) {
+            return Gfx.COLOR_BLUE;
+        // Green Zone
+        } else if ( fHeartRate < mZones[2] ) {
+            return Gfx.COLOR_GREEN;
+        // Orange Zone
+        } else if ( fHeartRate < mZones[3] ) {
+            return Gfx.COLOR_YELLOW;
+        //Red Zone
+        } else if ( fHeartRate >= mZones[3] ) {
+            return Gfx.COLOR_RED;
+        }
+        
+        return Gfx.COLOR_DK_GRAY;
+    }
+
+    function getHRZoneColorIndex(fHeartRate){       
         
         // Gray Zone
         if ( fHeartRate < mZones[0] ) {
@@ -344,39 +369,26 @@ class IHModel
 
         //Set Zone and Count Zone Seconds
         if ( mHeartRate < mZones[0] ) { // Gray Zone
-            tz1++; //mHeartRateZone = 1;
+            mZoneTimes[0]++; //mHeartRateZone = 1;
         } else if ( mHeartRate < mZones[1] ) { // Blue Zone
-            tz2++; //mHeartRateZone = 2;
+           mZoneTimes[1]++; //mHeartRateZone = 2;
         } else if ( mHeartRate < mZones[2] ) {  // Green Zone
-            tz3++; //mHeartRateZone = 3;
+            mZoneTimes[2]++; //mHeartRateZone = 3;
         } else if ( mHeartRate < mZones[3] ) { // Orange Zone
-            tz4++; //mHeartRateZone = 4;
+            mZoneTimes[3]++; //mHeartRateZone = 4;
         } else if ( mHeartRate >= mZones[3] ) { // Red Zone
-            tz5++; //mHeartRateZone = 5;
+            mZoneTimes[4]++; //mHeartRateZone = 5;
         }
 
-        mZoneTimes = [ tz1, tz2, tz3, tz4, tz5 ];
+        //mZoneTimes = [ tz1, tz2, tz3, tz4, tz5 ];
 
 		 var activity = Activity.getActivityInfo();
 		 if (activity != null) {
 		 
-	        if ( activity.maxHeartRate != null ) {
-	            mPeakHR = activity.maxHeartRate; 
-	        } else {
-	            mPeakHR = 0;
-	        }
-        
-	        if ( activity.averageHeartRate != null ) {
-	            mAverageHR = activity.averageHeartRate;
-	        } else {
-	            mAverageHR = 0;
-	        }
-	        
-	        if ( activity.calories != null ) {
-	            mCalories = activity.calories;
-	        } else {
-	            mCalories = 0;
-	        }
+	        mPeakHR    = activity.maxHeartRate     == null ? 0 : activity.maxHeartRate; 
+        	mAverageHR = activity.averageHeartRate == null ? 0 : activity.averageHeartRate;
+	        mCalories  = activity.calories         == null ? 0 : activity.calories;
+
         }
 
         // Increment timer
@@ -395,6 +407,7 @@ class IHModel
     // Define the HR Zones from Garmin Profile
     hidden function setZones() {
 
+		/*
         var birthYear = Profile.getProfile().birthYear;
         var todayYear = Time.Gregorian.info(Time.today(), Time.FORMAT_SHORT).year;
         var gender = Profile.getProfile().gender;
@@ -432,9 +445,18 @@ class IHModel
             //Log.debug("User Age: " + userAge);
             //Log.debug("Max HR Set to: " + mMaxHR);
         }
+        
+        */
 
 		//Get Zones from Garmin User Profile
         var genericZoneInfo = UserProfile.getHeartRateZones(UserProfile.HR_ZONE_SPORT_GENERIC);
+        
+        mMaxHR = genericZoneInfo[5];
+        // If we aren't getting a valid max HR
+        if ( mMaxHR <= 0 || mMaxHR == null ) {
+            mMaxHR = 230;
+        }
+        
         mZones = [genericZoneInfo[1],genericZoneInfo[2],genericZoneInfo[3],genericZoneInfo[4]];  
     }
 

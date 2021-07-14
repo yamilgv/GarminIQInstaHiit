@@ -1,23 +1,32 @@
 <fonts>
 
 	<!-- GPS and Percentage -->
-	<font id="RobotoCondensedReg16" filename="RobotoCondensedReg16.fnt" filter="GPS%" antialias="true" />
-	
+	<font id="RobotoCondensedReg16"
+		filename="RobotoCondensedReg16.fnt" filter="GPS%" antialias="true" />
+
 	<!-- Battery, Temperature and Zones Legend Values -->
-	<font id="RobotoCondensedBold22" filename="RobotoCondensedBold22.fnt" filter=" 0123456789°FC" antialias="true" />
-	
+	<font id="RobotoCondensedBold22"
+		filename="RobotoCondensedBold22.fnt" filter=" 0123456789°FC"
+		antialias="true" />
+
 	<!-- Field Labels -->
-	<font id="RobotoMedium22" filename="RobotoMedium22.fnt" antialias="true" />
-	
+	<font id="RobotoMedium22" filename="RobotoMedium22.fnt"
+		antialias="true" />
+
 	<!-- Calories and Intensity Minutes Values -->
-	<font id="RobotoCondensedBold28" filename="RobotoCondensedBold28.fnt"  filter="0123456789" antialias="true" />
-	
-	<!-- Time, Timer, Peak and Max, Workout Done  -->
-	<font id="RobotoCondensedBold30" filename="RobotoCondensedBold30.fnt" antialias="true" />
+	<font id="RobotoCondensedBold28"
+		filename="RobotoCondensedBold28.fnt" filter=" 0123456789:"
+		antialias="true" />
+
+	<!-- Time, Timer, Peak and Max, Workout Done -->
+	<font id="RobotoCondensedBold30"
+		filename="RobotoCondensedBold30.fnt" antialias="true" />
 
 	<!-- HR Percent and HR Initial View -->
-	<font id="RobotoBlack39" filename="RobotoBlack39.fnt" filter="0123456789-" antialias="true" />
-	
+	<font id="RobotoBlack39" filename="RobotoBlack39.fnt"
+		filter="0123456789-" antialias="true" />
+
 	<!-- Main HR -->
-	<font id="RobotoBlack76" filename="RobotoBlack76.fnt" filter="0123456789" antialias="true" />
+	<font id="RobotoBlack76" filename="RobotoBlack76.fnt"
+		filter="0123456789" antialias="true" />
 </fonts>

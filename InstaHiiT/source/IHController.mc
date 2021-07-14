@@ -41,7 +41,10 @@ class IHController
     //const ALLOW_HRSTABILITY = "allowHRStability";   
     const ALLOW_GPSTRACKING = "allowGPSTracking";
     const ALLOW_DARKMODE = "allowDarkMode"; 
-    const ALLOW_BATTTEMP = "allowBATTTEMP";  
+    const ALLOW_BATTTEMP = "allowBATTTEMP"; 
+    const GRPH_REFRSH_RATE  = "graphRefreshRate";
+    const IS_VIVOACTIVE3 = Ui.loadResource(Rez.Strings.isVivoActive).toNumber();
+    
     //const ASK_ACTIVITY = "askActivity";
     
     const GPSCapable = 1;
@@ -62,6 +65,12 @@ class IHController
 		"Hiking",	//3
 		"Running",	//4
 		"Sports"	//5
+	];
+	
+	var mRefRate = [
+		["Normal-30 Secs", :grrNormal, 30],
+		["High-15 Secs",   :grrHigh, 15],
+		["Live-5 Secs",    :grrLive, 5]
 	];
 
     //! Initialize the controller
@@ -94,7 +103,7 @@ class IHController
         //var delegate = new IHWorkoutDelegate();
         //var view = new IHWorkoutView();
         //Ui.switchToView(view, delegate, Ui.SLIDE_LEFT);
-       loadPreferences();
+        loadPreferences();
         mModel.start();
         notifyShort();
     }
@@ -149,19 +158,23 @@ class IHController
 
     //! Save the recording
     function save() {
+
+
+        // Give the system some time to finish the recording. Push up a progress bar
+        // and start a timer to allow all processing to finish
+        Ui.pushView(new Ui.ProgressBar("Saving...", null), new ProgressDelegate(), Ui.SLIDE_DOWN);
+        //mTimer = new Timer.Timer();
+
         // Set final statistic variables for review
         mModel.setStats();
 
         // Save the recording
         mModel.save();
-
-        // Give the system some time to finish the recording. Push up a progress bar
-        // and start a timer to allow all processing to finish
-        Ui.pushView(new Ui.ProgressBar("Saving...", null), new ProgressDelegate(), Ui.SLIDE_DOWN);
-        mTimer = new Timer.Timer();
+        
+        onFinish();
 
         // After data is saved, proceed to screens to review the stats of the workout
-        mTimer.start(method(:onFinish), 3000, false);
+        //mTimer.start(method(:onFinish), 3000, false);
         
     }
 
@@ -279,6 +292,12 @@ class IHController
     
     //Toggles Start/Reset Secondary Timer
     function toggleSecondaryTimer(){
+    
+    	mModel.createInterval();
+	    mModel.resetSecondaryTimer();
+	    mModel.startSecondaryTimer(true);
+    
+    	/*START/STOP/START/STOP
     	if(isSecondaryTimerStarted == false) {
         	mModel.startSecondaryTimer(true);
         	isSecondaryTimerStarted = true;
@@ -286,7 +305,7 @@ class IHController
         else {
         	mModel.resetSecondaryTimer();
         	isSecondaryTimerStarted = false;
-        }
+        }*/
     }
 
     function vibrate(style) {
@@ -400,6 +419,12 @@ class IHController
     function getActivitySubType() {
         var subType = getNumbericPref(ACTIVITY_SUB_TYPE, Recording.SUB_SPORT_STRENGTH_TRAINING, 0, 100);
         return subType;
+    }
+    
+    //! Get graph refresh rate preference
+    function getGraphRefreshRate() {
+        var graphRefreshRate = getNumbericPref(GRPH_REFRSH_RATE, 30, 0, 30);
+        return graphRefreshRate;
     }
 
     //! Return boolean of vibration setting preference

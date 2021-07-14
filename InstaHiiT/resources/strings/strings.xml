@@ -1,4 +1,6 @@
 <strings>
-	<string id="AppName">InstaHiiT</string>
+	<string id="AppName">InstaHiiT SE</string>
+	<string id="AppNameDev">IH Dev</string>
 	<string id="AppDescription">High Intensity Interval Training Tracking</string>
+	<string id="isVivoActive">0</string>
 </strings>

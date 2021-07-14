@@ -24,6 +24,12 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
         	return true;
         }
         
+        //Is Lap Key
+        if(mController.WorkoutUIState == mController.UISTATE_RUNNING && mController.IS_VIVOACTIVE3 == 0){
+        	onSecondaryTimer();
+        	return true;
+        }
+        
         // Exit App on back press if Workout not running
         if(mController.WorkoutUIState == mController.UISTATE_WORKOUTEND){
         	mController.onExit();
@@ -37,12 +43,11 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
     function onMenu() {
     
      	System.println("Menu Pressed.");
+     	System.println("mController.IS_VIVOACTIVE3 "+mController.IS_VIVOACTIVE3); 
     
         // Treat the Menu button like the Secondary Timer Toggle button during workout 
-        if(mController.WorkoutUIState == mController.UISTATE_RUNNING) {
-        	mController.vibrate(0);
-        	//mController.restartSecondaryTimer();
-        	mController.toggleSecondaryTimer();
+        if(mController.WorkoutUIState == mController.UISTATE_RUNNING && mController.IS_VIVOACTIVE3 == 1) {
+			onSecondaryTimer();
         	return true;
         }
         
@@ -92,6 +97,11 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
        //if (key.getKey() == Ui.KEY_MENU) {
 		//	System.println("Menu Pressed.");
        // }
+       
+       if (key.getKey() == Ui.KEY_LAP) {
+			System.println("Lap Pressed.");
+			onSecondaryTimer();
+        }
         
         //Toggle HR Color Zones Mode Text
 		if(key.getKey() == Ui.KEY_UP || key.getKey() == Ui.KEY_DOWN){
@@ -133,6 +143,13 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
 		}
 		
         //System.println(swipeEvent.getDirection()); // e.g. SWIPE_RIGHT = 1
+    }
+    
+    function onSecondaryTimer(){
+        if(mController.WorkoutUIState == mController.UISTATE_RUNNING) {
+        	mController.vibrate(0);
+        	mController.toggleSecondaryTimer();
+        }
     }
 
 }
