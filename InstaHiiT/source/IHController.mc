@@ -387,15 +387,15 @@ class IHController
         var app = App.getApp();
         var pref = def;
         
-        System.println("Preference "+name+"");
+        //System.println("Preference "+name+"");
 
         if (app != null) {
             pref = app.getProperty(name);
 
             if (pref != null) {
-            	System.println("Preference "+name+" exist.");
+            	//System.println("Preference "+name+" exist.");
                 if (pref instanceof Toybox.Lang.Boolean) {
-                	System.println("Preference value "+pref);
+                	//System.println("Preference value "+pref);
                     return pref;
                 }
 

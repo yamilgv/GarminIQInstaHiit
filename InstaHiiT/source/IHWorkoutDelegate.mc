@@ -42,8 +42,8 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
     //! Menu button pressed / VivoActive3 LongPress
     function onMenu() {
     
-     	System.println("Menu Pressed.");
-     	System.println("mController.IS_VIVOACTIVE3 "+mController.IS_VIVOACTIVE3); 
+     	//System.println("Menu Pressed.");
+     	//System.println("mController.IS_VIVOACTIVE3 "+mController.IS_VIVOACTIVE3); 
     
         // Treat the Menu button like the Secondary Timer Toggle button during workout 
         if(mController.WorkoutUIState == mController.UISTATE_RUNNING && mController.IS_VIVOACTIVE3 == 1) {
@@ -99,7 +99,7 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
        // }
        
        if (key.getKey() == Ui.KEY_LAP) {
-			System.println("Lap Pressed.");
+			//System.println("Lap Pressed.");
 			onSecondaryTimer();
         }
         
@@ -123,7 +123,7 @@ class IHWorkoutDelegate extends Ui.BehaviorDelegate {
         }
     }
     
-        //! Screen Tap
+    //! Screen Tap
     function onHold(type) {
         if (type.getType() == Ui.CLICK_TYPE_RELEASE) {
             //mController.turnOnBacklight();

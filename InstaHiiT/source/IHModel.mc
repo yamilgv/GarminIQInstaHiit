@@ -30,7 +30,8 @@ class IHModel
     // Primary stats used during intervals
     hidden var mHeartRate;
     hidden var mMaxHR;
-    hidden var mZones;
+    var mZones;
+    var mZonesG;
     var mZoneTimes;
     //hidden var mSplats;
     //hidden var mSecondsSplat;
@@ -361,6 +362,78 @@ class IHModel
         
         return 0;
     }
+    
+    function getGZoneIndexLL(fHeartRate){       
+        
+        // Gray Zone LL
+               if ( fHeartRate < mZonesG[1] ) {
+            return 0;
+        // Gray Zone UL
+        } else if ( fHeartRate < mZonesG[2] ) {
+            return 1;            
+        // Blue Zone LL
+        } else if ( fHeartRate < mZonesG[3] ) {
+            return 2;
+        // Blue Zone UL
+        } else if ( fHeartRate < mZonesG[4] ) {
+            return 3;
+        // Green Zone LL
+        } else if ( fHeartRate < mZonesG[5] ) {
+            return 4;
+        // Green Zone UL
+        } else if ( fHeartRate < mZonesG[6] ) {
+            return 5;
+        // Orange Zone LL
+        } else if ( fHeartRate < mZonesG[7] ) {
+            return 6;
+        // Orange Zone UL
+        } else if ( fHeartRate < mZonesG[8] ) {
+            return 7;
+        // Red Zone LL
+        } else if ( fHeartRate < mZonesG[9] ) {
+            return 8;
+        // Red Zone UL
+        } else { //ifHeartRate >= mZonesG[9] )
+            return 9;
+        }
+        
+    }
+    
+    function getGZoneIndexUL(fHeartRate){       
+        
+        // Red Zone UL
+               if ( fHeartRate >= mZonesG[9] ) {
+            return 9;
+        // Red Zone UL
+        } else if ( fHeartRate >= mZonesG[8] ) {
+            return 8;            
+        // Orange Zone UL
+        } else if ( fHeartRate >= mZonesG[7] ) {
+            return 7;
+        // Orange Zone LL
+        } else if ( fHeartRate >= mZonesG[6] ) {
+            return 6;
+        // Green Zone UL
+        } else if ( fHeartRate >= mZonesG[5] ) {
+            return 5;
+        // Green Zone LL
+        } else if ( fHeartRate >= mZonesG[4] ) {
+            return 4;
+        // Blue Zone UL
+        } else if ( fHeartRate >= mZonesG[3] ) {
+            return 3;
+        // Blue Zone LL
+        } else if ( fHeartRate >= mZonesG[2] ) {
+            return 2;
+        // Gray Zone UL
+        } else if ( fHeartRate >= mZonesG[1] ) {
+            return 1;
+        // Gray Zone LL
+        } else { //ifHeartRate >= mZonesG[0] )
+            return 0;
+        }
+        
+    }
 
     // Fetch HR Fields each second
     function hrFieldsCallback() {
@@ -458,13 +531,26 @@ class IHModel
         }
         
         mZones = [genericZoneInfo[1],genericZoneInfo[2],genericZoneInfo[3],genericZoneInfo[4]];  
+        
+        mZonesG = [genericZoneInfo[0], 
+        			(genericZoneInfo[1] - genericZoneInfo[0])/2+genericZoneInfo[0],
+        			genericZoneInfo[1],
+        			(genericZoneInfo[2] - genericZoneInfo[1])/2+genericZoneInfo[1],
+        			genericZoneInfo[2],
+        			(genericZoneInfo[3] - genericZoneInfo[2])/2+genericZoneInfo[2],
+        			genericZoneInfo[3],
+        			(genericZoneInfo[4] - genericZoneInfo[3])/2+genericZoneInfo[3],
+        			genericZoneInfo[4],
+        			(mMaxHR - genericZoneInfo[4])/2+genericZoneInfo[4],
+        			genericZoneInfo[5]]; 
+ 
     }
 
     // Set the recording activity type as per user preferences
     function setActivity(type, subType) {
         if(Toybox has :ActivityRecording) {
         // Create a new FIT recording session
-        System.println("Activity Recording Type: " + type + " Sub: " + subType);
+        //System.println("Activity Recording Type: " + type + " Sub: " + subType);
         mSession = Recording.createSession({:sport=>type, :subSport=>subType, :name => "HIIT Training"});
         //Log.debug("Activity Recording Type: " + type + " Sub: " + subType + "Act Str: "+ actType);
         }
